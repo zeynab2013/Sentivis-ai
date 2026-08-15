@@ -1,0 +1,50 @@
+# Analysis heuristics — thresholds for attribute, relation, activity, and context stages.
+
+[analysis.attributes]
+size_small_max_ratio = 0.02
+size_medium_max_ratio = 0.08
+zone_split_low = 0.33
+zone_split_high = 0.66
+distance_near_ratio = 0.12
+distance_medium_ratio = 0.04
+pose_standing_ratio = 1.25
+pose_lying_ratio = 0.75
+visibility_high_threshold = 0.75
+visibility_medium_threshold = 0.45
+
+[analysis.relationships]
+overlap_distance = 1.0
+overlap_confidence = 0.9
+distance_confidence_factor = 50.0
+max_confidence = 0.95
+near_distance_ratio = 0.18
+far_distance_ratio = 0.48
+
+[analysis.activity]
+confidence_with_nodes = 0.78
+confidence_empty = 0.35
+
+[analysis.activity_reasoning]
+enabled = true
+mode = "heuristic"
+model = "gemma3:4b"
+base_url = "http://127.0.0.1:11434"
+timeout_seconds = 180.0
+fallback_to_minimal = true
+prefer_ollama_caption = false
+models = ["gemma3:4b", "mistral:7b", "llama3.2:3b", "gemma2:9b", "gemma2:2b"]
+
+[analysis.semantic_reasoning]
+enabled = true
+mode = "ollama"
+model = "gemma3:4b"
+base_url = "http://127.0.0.1:11434"
+timeout_seconds = 180.0
+fallback_to_context_caption = true
+prefer_over_gemma = true
+models = ["gemma3:4b", "mistral:7b", "llama3.2:3b", "gemma2:9b", "gemma2:2b"]
+
+[analysis.context]
+crowd_threshold = 3
+complexity_high_relations = 12
+complexity_medium_relations = 5

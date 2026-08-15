@@ -1,0 +1,51 @@
+{
+  "release_status": "FINAL COMPETITION BUILD — FROZEN",
+  "application_name": "Sentivis AI",
+  "application_version": "1.0.0",
+  "architecture_version": "2.3",
+  "ai_pipeline_version": "1.0.0",
+  "freeze_date_utc": "2026-08-14",
+  "competition_mode": true,
+  "device": {
+    "preferred": "cuda",
+    "validated_runtime": "cpu_fallback_when_cuda_unavailable"
+  },
+  "models": {
+    "yolo": "yolo11x",
+    "yolo_imgsz": 1280,
+    "yolo_confidence_threshold": 0.28,
+    "yolo_iou_threshold": 0.45,
+    "vlm_perception": "microsoft/Florence-2-base-ft",
+    "semantic_synthesis": "gemma3:4b",
+    "enhancement_sr": "realesr-general-x4v3",
+    "sam2": "optional_disabled_when_weights_missing"
+  },
+  "frozen_systems": [
+    "yolo_detector",
+    "yolo_imgsz_1280",
+    "detection_thresholds_nms_filtering",
+    "scene_graph",
+    "environment_inference",
+    "activity_inference",
+    "relationship_inference",
+    "vlm_activity_bridge",
+    "caption_generation_architecture",
+    "caption_factuality_claim_gate",
+    "caption_quality_and_coverage_formulas",
+    "caption_refinement_logic",
+    "enhancement_realesrgan",
+    "ocr",
+    "translation_i18n",
+    "tts_voice",
+    "streamlit_ui_behavior",
+    "model_selection",
+    "device_selection"
+  ],
+  "accepted_limitations": [
+    "Farm image may miss a second person at YOLO@1280",
+    "Some bicycle activity evidence may be incomplete",
+    "Some captions can still be slightly robotic",
+    "Weak-evidence images may produce shorter captions"
+  ],
+  "notes": "Absolute freeze for competition submission. No further production AI changes."
+}

@@ -1,0 +1,75 @@
+{
+  "timestamp": "2026-07-30T20:51:15.640839+00:00",
+  "passed": true,
+  "overall_score": 99,
+  "system_checks": [
+    {
+      "name": "application_startup",
+      "passed": true,
+      "detail": "8 startup stages, 1 errors"
+    },
+    {
+      "name": "configuration_loading",
+      "passed": true,
+      "detail": "health_score=89"
+    },
+    {
+      "name": "model_discovery",
+      "passed": true,
+      "detail": "3 models registered"
+    },
+    {
+      "name": "image_loading",
+      "passed": true,
+      "detail": "loaded 64x64"
+    },
+    {
+      "name": "pipeline_execution",
+      "passed": true,
+      "detail": "caption='The scene appears to include person, but'"
+    },
+    {
+      "name": "result_presentation",
+      "passed": true,
+      "detail": "quality=0.93"
+    },
+    {
+      "name": "export_workflow",
+      "passed": true,
+      "detail": "certification_report.md"
+    },
+    {
+      "name": "application_shutdown",
+      "passed": true,
+      "detail": "model_manager.release_all completed"
+    }
+  ],
+  "build_profiles": [
+    {
+      "profile": "development",
+      "validation_passed": true,
+      "build_passed": true,
+      "detail": "Validation passed"
+    },
+    {
+      "profile": "production",
+      "validation_passed": true,
+      "build_passed": true,
+      "detail": "Validation passed"
+    },
+    {
+      "profile": "portable",
+      "validation_passed": true,
+      "build_passed": true,
+      "detail": "Validation passed"
+    },
+    {
+      "profile": "release",
+      "validation_passed": true,
+      "build_passed": true,
+      "detail": "Validation passed"
+    }
+  ],
+  "quality_findings": [],
+  "removed_artifacts": []
+}

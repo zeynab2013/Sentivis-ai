@@ -1,0 +1,35 @@
+"""Light theme design tokens (future-ready)."""
+
+from ui.design.tokens import DesignTokens
+
+LIGHT_TOKENS = DesignTokens(
+    primary="#5a32b5",
+    secondary="#E8B923",
+    accent="#7c4dff",
+    background="#f4f2f8",
+    surface="#ffffff",
+    card="#ffffff",
+    border="#d8d2e6",
+    success="#15803d",
+    warning="#b45309",
+    error="#dc2626",
+    text_primary="#1a1523",
+    text_secondary="#5c5470",
+    radius_sm=6,
+    radius_md=10,
+    radius_lg=14,
+    spacing_xs=6,
+    spacing_sm=10,
+    spacing_md=14,
+    spacing_lg=18,
+    animation_ms=200,
+    icon_sm=14,
+    icon_md=18,
+    icon_lg=24,
+    font_family="Segoe UI",
+    font_size_sm=9,
+    font_size_md=10,
+    font_size_lg=12,
+    font_size_xl=18,
+    focus_ring="#E8B923",
+)

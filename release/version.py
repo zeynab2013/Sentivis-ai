@@ -1,0 +1,9 @@
+"""Centralized version constants for Sentivis AI."""
+
+APPLICATION_VERSION = "1.0.0"
+ARCHITECTURE_VERSION = "2.3"
+AI_PIPELINE_VERSION = "1.0.0"
+MODEL_REGISTRY_VERSION = "1.0.0"
+CONFIGURATION_VERSION = "1.0.0"
+PRODUCT_NAME = "Sentivis AI"
+WEBSITE_PLACEHOLDER = "https://sentivis.ai"

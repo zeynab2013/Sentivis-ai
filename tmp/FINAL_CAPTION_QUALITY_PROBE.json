@@ -1,0 +1,185 @@
+[
+  {
+    "name": "HORSE",
+    "status": "OK",
+    "path": "tmp\\uploads\\10815824_2997e03d76.jpg",
+    "words": 44,
+    "sentences": 5,
+    "caption": "A person with cream-colored clothing, including black pants and brown shoes, is on grass next to a brown horse. The pair are leading the horse outdoors. A fire is burning nearby. Two people are visible in the scene. A person is holding a rope.",
+    "setting": "outdoor area",
+    "entities": [
+      "horse",
+      "person"
+    ],
+    "overall_quality": 0.9376000000000001,
+    "object_coverage": 1.0,
+    "relationship_coverage": 1.0,
+    "hallucination_risk": 0.0,
+    "evidence_consistency": 0.7
+  },
+  {
+    "name": "SOCCER",
+    "status": "OK",
+    "path": "tmp\\uploads\\47871819_db55ac4699.jpg",
+    "words": 20,
+    "sentences": 3,
+    "caption": "A white sports ball rests in the scene. A person is playing football. Three people are visible in the scene.",
+    "setting": "recreational area",
+    "entities": [
+      "person",
+      "sports ball"
+    ],
+    "overall_quality": 0.9406,
+    "object_coverage": 1.0,
+    "relationship_coverage": null,
+    "hallucination_risk": 0.0,
+    "evidence_consistency": 0.75
+  },
+  {
+    "name": "MOTORCYCLE",
+    "status": "OK",
+    "path": "tmp\\uploads\\143552829_72b6ba49d4.jpg",
+    "words": 16,
+    "sentences": 2,
+    "caption": "A single person wearing a red jersey and brown pants. A person is riding a motorcycle.",
+    "setting": "outdoor area",
+    "entities": [
+      "motorcycle",
+      "person"
+    ],
+    "overall_quality": 0.9009999999999999,
+    "object_coverage": 1.0,
+    "relationship_coverage": 0.3333333333333333,
+    "hallucination_risk": 0.0,
+    "evidence_consistency": 0.5833333333333333
+  },
+  {
+    "name": "BICYCLE",
+    "status": "OK",
+    "path": "tmp\\uploads\\191003284_1025b0fb7d.jpg",
+    "words": 24,
+    "sentences": 3,
+    "caption": "A handbag and a light blue handbag are visible behind them. A person is riding a bicycle. Two people are visible in the scene.",
+    "setting": "outdoor area",
+    "entities": [
+      "bicycle",
+      "handbag",
+      "person"
+    ],
+    "overall_quality": 0.912475,
+    "object_coverage": 1.0,
+    "relationship_coverage": 0.125,
+    "hallucination_risk": 0.0,
+    "evidence_consistency": 0.59375
+  },
+  {
+    "name": "KITCHEN_COMPLEX",
+    "status": "OK",
+    "path": "tmp\\coco_kitchen.jpg",
+    "words": 25,
+    "sentences": 1,
+    "caption": "In a kitchen, a person wearing black clothing and black pants is near a sink and 2 brown bowls, while another person remains farther back.",
+    "setting": "kitchen",
+    "entities": [
+      "bowl",
+      "person",
+      "sink"
+    ],
+    "overall_quality": 0.9456,
+    "object_coverage": 1.0,
+    "relationship_coverage": null,
+    "hallucination_risk": 0.0,
+    "evidence_consistency": 0.7777777777777777
+  },
+  {
+    "name": "OUTDOOR_TRAIL",
+    "status": "OK",
+    "path": "tmp\\uploads\\95728660_d47de66544.jpg",
+    "words": 13,
+    "sentences": 2,
+    "caption": "A person is riding a bicycle outdoors. The person is wearing black clothing.",
+    "setting": "outdoor trail",
+    "entities": [
+      "bicycle",
+      "person"
+    ],
+    "overall_quality": 0.922,
+    "object_coverage": 1.0,
+    "relationship_coverage": 0.3333333333333333,
+    "hallucination_risk": 0.0,
+    "evidence_consistency": 0.7666666666666666
+  },
+  {
+    "name": "DENSE_INDOOR",
+    "status": "OK",
+    "path": "tmp\\uploads\\random_385406.jpg",
+    "words": 54,
+    "sentences": 3,
+    "caption": "A crowded outdoor outdoors hosts a diverse group of people participating in a tennis training session. Nine people stand on the court, each holding a tennis racket with varying attire; some wear white jerseys and black shoes, while others sport cream shirts and light blue footwear. A person is playing with a tennis racket.",
+    "setting": "recreational area",
+    "entities": [
+      "person",
+      "tennis racket"
+    ],
+    "overall_quality": 0.969509090909091,
+    "object_coverage": 1.0,
+    "relationship_coverage": 0.6363636363636364,
+    "hallucination_risk": 0.0,
+    "evidence_consistency": 0.8772727272727273
+  },
+  {
+    "name": "OCR_SOCCER",
+    "status": "OK",
+    "path": "tmp\\uploads\\47871819_db55ac4699.jpg",
+    "words": 92,
+    "sentences": 7,
+    "caption": "Two girls are playing soccer on a grassy field. One of the girls is wearing a white shirt and black shorts. The other girl has a blue shirt and blue shorts on. A white ball is on the grass in front of the two girls. Two other players can be seen in the background of the photo. A red flag is hanging on a pole near the field. Two women playing football on the ground, in the background some people walking, we can also see a pole, a flag and some trees.",
+    "setting": "recreational area",
+    "entities": [
+      "person",
+      "sports ball"
+    ],
+    "overall_quality": 0.7052,
+    "object_coverage": 1.0,
+    "relationship_coverage": null,
+    "hallucination_risk": 0.5,
+    "evidence_consistency": 0.5
+  },
+  {
+    "name": "COLOR_BIKE",
+    "status": "OK",
+    "path": "tmp\\uploads\\191003284_1025b0fb7d.jpg",
+    "words": 24,
+    "sentences": 3,
+    "caption": "A handbag and a light blue handbag are visible behind them. A person is riding a bicycle. Two people are visible in the scene.",
+    "setting": "outdoor area",
+    "entities": [
+      "bicycle",
+      "handbag",
+      "person"
+    ],
+    "overall_quality": 0.912475,
+    "object_coverage": 1.0,
+    "relationship_coverage": 0.125,
+    "hallucination_risk": 0.0,
+    "evidence_consistency": 0.59375
+  },
+  {
+    "name": "RELATION_HORSE",
+    "status": "OK",
+    "path": "tmp\\uploads\\10815824_2997e03d76.jpg",
+    "words": 36,
+    "sentences": 4,
+    "caption": "A person with beige clothing is on grass, leading a brown horse that is positioned to her left. A fire is burning nearby. Two people are visible in the scene. A person is holding a rope.",
+    "setting": "outdoor area",
+    "entities": [
+      "horse",
+      "person"
+    ],
+    "overall_quality": 0.9286,
+    "object_coverage": 1.0,
+    "relationship_coverage": 1.0,
+    "hallucination_risk": 0.0,
+    "evidence_consistency": 0.65
+  }
+]

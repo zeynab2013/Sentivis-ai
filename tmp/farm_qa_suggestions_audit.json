@@ -1,0 +1,17 @@
+{
+  "caption": "On a grassy field, a person in a black sweatshirt holds a rope while leading a large brown horse, while another person and another horse stand farther back in the field.",
+  "suggestions": [
+    "Is there fire or smoke visible in the scene?",
+    "How many people are visible in total?",
+    "What color is the other horse?",
+    "What color clothing is the second person wearing?",
+    "What color clothing is the person wearing?"
+  ],
+  "extra_answers": {
+    "What color is the horse?": "The horse appears brown.",
+    "What is the person doing?": "The main activity appears to be leading a horse.",
+    "Is there a fire visible?": "Yes. A fire is clearly visible in the scene."
+  },
+  "ui_nav_has_dashboard_import": false,
+  "ui_nav_routes_dashboard": false
+}

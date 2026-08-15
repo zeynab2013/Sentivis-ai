@@ -1,0 +1,46 @@
+{
+  "caption": "A person is preparing food in a kitchen. A refrigerator, a vase, and a 3 brown chairs are visible nearby. A 2 tvs is visible nearby.",
+  "nodes": [
+    [
+      "tv",
+      0.0527
+    ],
+    [
+      "tv",
+      0.0242
+    ],
+    [
+      "chair",
+      0.0222
+    ],
+    [
+      "chair",
+      0.0188
+    ],
+    [
+      "vase",
+      0.0141
+    ],
+    [
+      "dining table",
+      0.0409
+    ],
+    [
+      "chair",
+      0.0101
+    ],
+    [
+      "refrigerator",
+      0.0287
+    ],
+    [
+      "person",
+      0.0238
+    ]
+  ],
+  "person_in_caption": true,
+  "suggestions": [],
+  "assistant": "The main activity appears to be kitchen preparation.",
+  "vlm": 1,
+  "assistant_vlm": 0
+}

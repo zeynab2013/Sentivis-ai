@@ -1,0 +1,69 @@
+[app]
+name = "Sentivis AI"
+version = "1.0.0"
+
+[logging]
+level = "INFO"
+console_enabled = true
+max_file_bytes = 5242880
+backup_count = 5
+
+[image]
+max_dimension = 4096
+max_file_size_bytes = 33554432
+# Larger YOLO input improves small-object and interaction recall (slower, higher quality).
+yolo_inference_size = 1280
+
+[image.enhancement]
+enabled = true
+adaptive_mode = true
+quality_threshold = 0.72
+min_brightness = 0.28
+max_brightness = 0.82
+min_contrast = 0.22
+min_sharpness = 0.18
+max_blur_score = 0.65
+max_noise_score = 0.55
+enable_clahe = true
+enable_gamma = true
+enable_denoise = true
+enable_sharpen = true
+enable_color_correction = true
+# Real learned SR for MEDIUM/LOW (Real-ESRGAN compact / x2plus). Not Lanczos.
+enable_super_resolution = true
+# Attempt SR when shorter side is below this (e.g. 500×333 farm image).
+super_resolution_min_dimension = 720
+sr_model = "realesr-general-x4v3"
+sr_scale = 2
+sr_tile_size = 128
+sr_tile_overlap = 8
+sr_device = "auto"
+sr_max_output_side = 2048
+sr_allow_download = true
+quality_low_threshold = 0.55
+quality_medium_threshold = 0.78
+# Never force enhancement on already-excellent images.
+competition_always_enhance = false
+
+[hardware]
+vram_warning_ratio = 0.90
+ram_warning_ratio = 0.92
+cpu_fallback_enabled = true
+pipeline_timeout_seconds = 1200
+
+[paths]
+cache_dir = "cache"
+exports_dir = "exports"
+logs_dir = "logs"
+models_dir = "models"
+model_search_paths = []
+
+[workers]
+export_thread_pool_size = 2
+
+[competition]
+quality_threshold = 0.55
+max_hallucination_risk = 0.25
+deterministic_seed = 42
+gemma_temperature = 0.0
+vram_release_threshold_mb = 64.0

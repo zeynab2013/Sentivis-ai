@@ -1,0 +1,45 @@
+{
+  "image": "10815824_2997e03d76.jpg",
+  "caption": "On a grassy field, a person wearing a black sweatshirt holds a rope while leading a large brown horse. Farther back in the field, another person stands near a second horse beneath the trees. In the foreground on the right, a fire burns. Two people and two horses are visible across the open field.",
+  "enhancement_status": "ENHANCEMENT_APPLIED",
+  "answers": {
+    "Is there fire or smoke visible?": "Yes. A fire is clearly visible. Smoke cannot be confirmed.",
+    "What color clothing is the person wearing?": "The person is wearing a black sweatshirt.",
+    "How many people are visible?": "There are 2 people.",
+    "How many horses are visible?": "2 horses are visible.",
+    "Is the person holding the horse?": "The person is leading the horse, but holding the horse itself cannot be confirmed.",
+    "What color is the other horse?": "The horse appears brown."
+  },
+  "leak_checks": {
+    "Is there fire or smoke visible?": {
+      "has_breakdown": false,
+      "has_person_1": false,
+      "has_entities_header": false
+    },
+    "What color clothing is the person wearing?": {
+      "has_breakdown": false,
+      "has_person_1": false,
+      "has_entities_header": false
+    },
+    "How many people are visible?": {
+      "has_breakdown": false,
+      "has_person_1": false,
+      "has_entities_header": false
+    },
+    "How many horses are visible?": {
+      "has_breakdown": false,
+      "has_person_1": false,
+      "has_entities_header": false
+    },
+    "Is the person holding the horse?": {
+      "has_breakdown": false,
+      "has_person_1": false,
+      "has_entities_header": false
+    },
+    "What color is the other horse?": {
+      "has_breakdown": false,
+      "has_person_1": false,
+      "has_entities_header": false
+    }
+  }
+}

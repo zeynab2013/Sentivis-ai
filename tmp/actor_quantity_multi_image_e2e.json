@@ -1,0 +1,122 @@
+{
+  "results": [
+    {
+      "name": "SOCCER",
+      "path": "D:\\comptitions\\America competition(innoverse) 2026\\SENTIVIS AI\\tmp\\uploads\\47871819_db55ac4699.jpg",
+      "status": "PASS",
+      "reasons": [],
+      "final_caption": "Two people are playing football. A white sports ball rests in the scene.",
+      "verified_people_count": 4,
+      "verified_activity_actor_counts": {
+        "playing football": 2
+      },
+      "caption_actor_mentions": [
+        [
+          "two people",
+          "are playing football"
+        ]
+      ],
+      "quality": {
+        "overall": 0.9189999999999999,
+        "object_coverage": 1.0,
+        "activity_coverage": null,
+        "relationship_coverage": null,
+        "evidence_consistency": 0.75,
+        "hallucination_risk": 0.0
+      },
+      "confirmed_activities": [
+        "playing football"
+      ]
+    },
+    {
+      "name": "HORSE",
+      "path": "D:\\comptitions\\America competition(innoverse) 2026\\SENTIVIS AI\\tmp\\uploads\\10815824_2997e03d76.jpg",
+      "status": "PASS",
+      "reasons": [],
+      "final_caption": "A person wearing light clothing holds a rope while leading a brown horse outdoors. A fire is burning in the foreground. Farther back, another horse is in the field.",
+      "verified_people_count": 1,
+      "verified_activity_actor_counts": {
+        "leading a horse": 1,
+        "holding a rope": 1
+      },
+      "caption_actor_mentions": [],
+      "quality": {
+        "overall": 0.9736,
+        "object_coverage": 1.0,
+        "activity_coverage": 1.0,
+        "relationship_coverage": 1.0,
+        "evidence_consistency": 0.9,
+        "hallucination_risk": 0.0
+      },
+      "confirmed_activities": [
+        "leading a horse",
+        "holding a rope"
+      ]
+    },
+    {
+      "name": "MOTORCYCLE",
+      "path": "D:\\comptitions\\America competition(innoverse) 2026\\SENTIVIS AI\\tmp\\uploads\\143552829_72b6ba49d4.jpg",
+      "status": "PASS",
+      "reasons": [],
+      "final_caption": "A person is riding a dirt bike. A person, gloves and riding a bike on the water. Large rocks and grass on the ground next to the water. A brown motorcycle is visible behind them. A person is riding. A person is riding.",
+      "verified_people_count": 1,
+      "verified_activity_actor_counts": {
+        "riding a motorcycle": 1
+      },
+      "caption_actor_mentions": [
+        [
+          "a person",
+          "is riding a dirt bike"
+        ],
+        [
+          "a person",
+          "is riding"
+        ],
+        [
+          "a person",
+          "is riding"
+        ]
+      ],
+      "quality": {
+        "overall": 0.80535,
+        "object_coverage": 1.0,
+        "activity_coverage": null,
+        "relationship_coverage": 0.3333333333333333,
+        "evidence_consistency": 0.5208333333333333,
+        "hallucination_risk": 0.25
+      },
+      "confirmed_activities": [
+        "riding a motorcycle"
+      ]
+    },
+    {
+      "name": "BICYCLE",
+      "path": "D:\\comptitions\\America competition(innoverse) 2026\\SENTIVIS AI\\tmp\\uploads\\191003284_1025b0fb7d.jpg",
+      "status": "PASS",
+      "reasons": [],
+      "final_caption": "Two people and a bicycle are visible outdoors. One person is carrying a handbag.",
+      "verified_people_count": 2,
+      "verified_activity_actor_counts": {
+        "carrying a handbag": 1
+      },
+      "caption_actor_mentions": [
+        [
+          "one person",
+          "is carrying a handbag"
+        ]
+      ],
+      "quality": {
+        "overall": 0.9415,
+        "object_coverage": 1.0,
+        "activity_coverage": null,
+        "relationship_coverage": 1.0,
+        "evidence_consistency": 0.875,
+        "hallucination_risk": 0.0
+      },
+      "confirmed_activities": [
+        "carrying a handbag"
+      ]
+    }
+  ],
+  "fails": 0
+}

@@ -1,0 +1,1523 @@
+{
+  "summary": {
+    "n_images": 11,
+    "preference_counts": {
+      "1280": 6,
+      "640": 0,
+      "equivalent": 5
+    },
+    "metric_winners": {
+      "person": {
+        "tie": 6,
+        "1280": 4,
+        "640": 1
+      },
+      "sports": {
+        "tie": 10,
+        "1280": 1
+      },
+      "animal": {
+        "tie": 9,
+        "1280": 2
+      },
+      "small": {
+        "tie": 8,
+        "1280": 3
+      },
+      "fp_pressure": {
+        "tie": 11
+      }
+    },
+    "person_regressions_at_1280": [
+      "10815824_2997e03d76.jpg"
+    ],
+    "sports_regressions_at_1280": [],
+    "animal_regressions_at_1280": [],
+    "person_gains_at_1280": [
+      "47871819_db55ac4699.jpg",
+      "141139674_246c0f90a1.jpg",
+      "random_385406.jpg",
+      "47870024_73a4481f7d.jpg"
+    ],
+    "sports_gains_at_1280": [
+      "47870024_73a4481f7d.jpg"
+    ],
+    "animal_gains_at_1280": [
+      "10815824_2997e03d76.jpg",
+      "random_850976.jpg"
+    ],
+    "images_1280_better": [
+      "47871819_db55ac4699.jpg",
+      "141139674_246c0f90a1.jpg",
+      "5e4dc9b3-589c-43c6-84b0-5620936c9df4.png",
+      "random_850976.jpg",
+      "random_385406.jpg",
+      "47870024_73a4481f7d.jpg"
+    ],
+    "images_640_better": [],
+    "images_equivalent": [
+      "143552829_72b6ba49d4.jpg",
+      "10815824_2997e03d76.jpg",
+      "191003284_1025b0fb7d.jpg",
+      "166321294_4a5e68535f.jpg",
+      "95728660_d47de66544.jpg"
+    ],
+    "graph_identical_count": 4,
+    "activity_identical_count": 9,
+    "caption_identical_count": 0,
+    "qualitative_notes": {
+      "farm_person": "640 recovers 2nd person; 1280 class-flips region to horse (person 1 vs 2, horses 4 vs 2)",
+      "farm_vote_quirk": "Vote tally marked farm equivalent because animal count rose at 1280; person completeness prefers 640",
+      "caption_nondeterminism": "0/11 identical captions even when graphs match \u2014 VLM/Ollama variance dominates caption diffs",
+      "bike_activity": "Identical graphs but riding vs carrying \u2014 treat as nondeterministic, not imgsz causal"
+    }
+  },
+  "recommendation": {
+    "code": "C",
+    "text": "Multi-scale detection is justified as a future improvement, but keep 1280 for final freeze",
+    "rationale": "Across 11 unique validation images, imgsz=1280 wins or ties on person/sports/small-object recall for the competition distribution (soccer +1 person, baseball-alt +1 person, dense indoor +2 people, outdoor misc +skateboard). Weak-clutter FP pressure is tied. The only clear person regression at 1280 is the known farm second-person miss (class-flip to horse). That single-image failure justifies future multi-scale work, but does not justify a global revert to 640 which would regress sports/dense scenes."
+  },
+  "rows": [
+    {
+      "id": "1_single_person_activity",
+      "category": "motorcycle rider",
+      "path": "tmp\\uploads\\143552829_72b6ba49d4.jpg",
+      "file": "143552829_72b6ba49d4.jpg",
+      "arms": {
+        "1280": {
+          "elapsed_s": 105.0,
+          "detection": {
+            "n": 2,
+            "labels": {
+              "person": 1,
+              "motorcycle": 1
+            },
+            "person_n": 1,
+            "person_confs": [
+              0.928
+            ],
+            "person_areas": [
+              0.171
+            ],
+            "sports_n": 0,
+            "sports_labels": {},
+            "animal_n": 0,
+            "animal_labels": {},
+            "small_n": 0,
+            "small_labels": {},
+            "weak_clutter_n": 0,
+            "weak_clutter_labels": {}
+          },
+          "graph_labels": {
+            "person": 1,
+            "motorcycle": 1
+          },
+          "graph_n": 2,
+          "people_count": 1,
+          "confirmed_activities": [
+            {
+              "activity": "riding a motorcycle",
+              "actors": [
+                "person_1",
+                "motorcycle_1"
+              ],
+              "conf": 0.855
+            }
+          ],
+          "caption": "A person is riding a dirt bike. A person, gloves and riding a bike on the water. Large rocks and grass on the ground next to the water. A brown motorcycle is visible behind them. A person is riding. A person is riding.",
+          "quality_overall": null,
+          "qa_passed": false
+        },
+        "640": {
+          "elapsed_s": 86.7,
+          "detection": {
+            "n": 2,
+            "labels": {
+              "person": 1,
+              "motorcycle": 1
+            },
+            "person_n": 1,
+            "person_confs": [
+              0.926
+            ],
+            "person_areas": [
+              0.1787
+            ],
+            "sports_n": 0,
+            "sports_labels": {},
+            "animal_n": 0,
+            "animal_labels": {},
+            "small_n": 0,
+            "small_labels": {},
+            "weak_clutter_n": 0,
+            "weak_clutter_labels": {}
+          },
+          "graph_labels": {
+            "person": 1,
+            "motorcycle": 1
+          },
+          "graph_n": 2,
+          "people_count": 1,
+          "confirmed_activities": [
+            {
+              "activity": "riding a motorcycle",
+              "actors": [
+                "person_1",
+                "motorcycle_1"
+              ],
+              "conf": 0.855
+            }
+          ],
+          "caption": "A person is riding a dirt bike. A person, gloves and riding a bike on the water. Large rocks and grass on the ground next to the water. A motorcycle is visible behind them. A person is riding. A person is riding.",
+          "quality_overall": null,
+          "qa_passed": false
+        }
+      },
+      "deltas": {
+        "person": 0,
+        "sports": 0,
+        "animal": 0,
+        "small": 0,
+        "weak_clutter": 0,
+        "graph_jaccard": 1.0,
+        "graph_identical": true,
+        "activity_identical": true,
+        "caption_identical": false
+      },
+      "winners": {
+        "person": "tie",
+        "sports": "tie",
+        "animal": "tie",
+        "small": "tie",
+        "fp_pressure": "tie"
+      },
+      "preference": "equivalent",
+      "flags": [
+        "caption_diff"
+      ]
+    },
+    {
+      "id": "2_multi_shared_activity",
+      "category": "soccer shared play",
+      "path": "tmp\\uploads\\47871819_db55ac4699.jpg",
+      "file": "47871819_db55ac4699.jpg",
+      "arms": {
+        "1280": {
+          "elapsed_s": 107.6,
+          "detection": {
+            "n": 5,
+            "labels": {
+              "person": 4,
+              "sports ball": 1
+            },
+            "person_n": 4,
+            "person_confs": [
+              0.839,
+              0.714,
+              0.579,
+              0.539
+            ],
+            "person_areas": [
+              0.2608,
+              0.0149,
+              0.2398,
+              0.1665
+            ],
+            "sports_n": 1,
+            "sports_labels": {
+              "sports ball": 1
+            },
+            "animal_n": 0,
+            "animal_labels": {},
+            "small_n": 2,
+            "small_labels": {
+              "sports ball": 1,
+              "person": 1
+            },
+            "weak_clutter_n": 0,
+            "weak_clutter_labels": {}
+          },
+          "graph_labels": {
+            "person": 4,
+            "sports ball": 1
+          },
+          "graph_n": 5,
+          "people_count": 4,
+          "confirmed_activities": [
+            {
+              "activity": "playing football",
+              "actors": [
+                "person_1",
+                "person_3",
+                "sports_ball_1"
+              ],
+              "conf": 0.74
+            }
+          ],
+          "caption": "Two people are playing football. A white sports ball rests in the scene.",
+          "quality_overall": null,
+          "qa_passed": true
+        },
+        "640": {
+          "elapsed_s": 109.5,
+          "detection": {
+            "n": 4,
+            "labels": {
+              "person": 3,
+              "sports ball": 1
+            },
+            "person_n": 3,
+            "person_confs": [
+              0.937,
+              0.875,
+              0.867
+            ],
+            "person_areas": [
+              0.2882,
+              0.4052,
+              0.0147
+            ],
+            "sports_n": 1,
+            "sports_labels": {
+              "sports ball": 1
+            },
+            "animal_n": 0,
+            "animal_labels": {},
+            "small_n": 2,
+            "small_labels": {
+              "sports ball": 1,
+              "person": 1
+            },
+            "weak_clutter_n": 0,
+            "weak_clutter_labels": {}
+          },
+          "graph_labels": {
+            "person": 3,
+            "sports ball": 1
+          },
+          "graph_n": 4,
+          "people_count": 3,
+          "confirmed_activities": [
+            {
+              "activity": "playing football",
+              "actors": [
+                "person_2",
+                "person_1",
+                "sports_ball_1"
+              ],
+              "conf": 0.74
+            }
+          ],
+          "caption": "Two people are playing football. A white sports ball sits at the bottom of the scene.",
+          "quality_overall": null,
+          "qa_passed": true
+        }
+      },
+      "deltas": {
+        "person": 1,
+        "sports": 0,
+        "animal": 0,
+        "small": 0,
+        "weak_clutter": 0,
+        "graph_jaccard": 0.8,
+        "graph_identical": false,
+        "activity_identical": true,
+        "caption_identical": false
+      },
+      "winners": {
+        "person": "1280",
+        "sports": "tie",
+        "animal": "tie",
+        "small": "tie",
+        "fp_pressure": "tie"
+      },
+      "preference": "1280",
+      "flags": [
+        "person_delta=4-3",
+        "graph_diff",
+        "caption_diff"
+      ]
+    },
+    {
+      "id": "3_multi_different_activities",
+      "category": "farm leading+holding",
+      "path": "tmp\\uploads\\10815824_2997e03d76.jpg",
+      "file": "10815824_2997e03d76.jpg",
+      "arms": {
+        "1280": {
+          "elapsed_s": 112.1,
+          "detection": {
+            "n": 5,
+            "labels": {
+              "horse": 4,
+              "person": 1
+            },
+            "person_n": 1,
+            "person_confs": [
+              0.86
+            ],
+            "person_areas": [
+              0.0254
+            ],
+            "sports_n": 0,
+            "sports_labels": {},
+            "animal_n": 4,
+            "animal_labels": {
+              "horse": 4
+            },
+            "small_n": 0,
+            "small_labels": {},
+            "weak_clutter_n": 0,
+            "weak_clutter_labels": {}
+          },
+          "graph_labels": {
+            "horse": 4,
+            "person": 1
+          },
+          "graph_n": 5,
+          "people_count": 1,
+          "confirmed_activities": [
+            {
+              "activity": "leading a horse",
+              "actors": [
+                "person_1",
+                "horse_1"
+              ],
+              "conf": 0.9
+            },
+            {
+              "activity": "holding a rope",
+              "actors": [
+                "person_1",
+                "horse_1"
+              ],
+              "conf": 0.855
+            }
+          ],
+          "caption": "A person in a cream-colored garment is on the grass, holding a rope with their hand as they leads one of the three brown horses. This single person is leading a horse, demonstrating a clear connection between them. A fire is burning nearby. The other 3 horses are positioned nearby and right, creating a line of brown animals across the outdoors.",
+          "quality_overall": null,
+          "qa_passed": true
+        },
+        "640": {
+          "elapsed_s": 98.8,
+          "detection": {
+            "n": 4,
+            "labels": {
+              "horse": 2,
+              "person": 2
+            },
+            "person_n": 2,
+            "person_confs": [
+              0.901,
+              0.866
+            ],
+            "person_areas": [
+              0.0247,
+              0.1334
+            ],
+            "sports_n": 0,
+            "sports_labels": {},
+            "animal_n": 2,
+            "animal_labels": {
+              "horse": 2
+            },
+            "small_n": 0,
+            "small_labels": {},
+            "weak_clutter_n": 0,
+            "weak_clutter_labels": {}
+          },
+          "graph_labels": {
+            "horse": 2,
+            "person": 2
+          },
+          "graph_n": 4,
+          "people_count": 2,
+          "confirmed_activities": [
+            {
+              "activity": "leading a horse",
+              "actors": [
+                "person_1",
+                "horse_2"
+              ],
+              "conf": 0.9
+            },
+            {
+              "activity": "holding a rope",
+              "actors": [
+                "person_1",
+                "horse_2"
+              ],
+              "conf": 0.855
+            }
+          ],
+          "caption": "Two people are situated outdoors in an open area, with A person leading a brown horse across the grassy ground. One person is holding a rope. A fire is burning nearby.",
+          "quality_overall": null,
+          "qa_passed": true
+        }
+      },
+      "deltas": {
+        "person": -1,
+        "sports": 0,
+        "animal": 2,
+        "small": 0,
+        "weak_clutter": 0,
+        "graph_jaccard": 0.5,
+        "graph_identical": false,
+        "activity_identical": true,
+        "caption_identical": false
+      },
+      "winners": {
+        "person": "640",
+        "sports": "tie",
+        "animal": "1280",
+        "small": "tie",
+        "fp_pressure": "tie"
+      },
+      "preference": "equivalent",
+      "flags": [
+        "person_delta=1-2",
+        "animal_delta=4-2",
+        "graph_diff",
+        "caption_diff"
+      ]
+    },
+    {
+      "id": "4_sports_soccer_alt",
+      "category": "football sports alt",
+      "path": "tmp\\uploads\\141139674_246c0f90a1.jpg",
+      "file": "141139674_246c0f90a1.jpg",
+      "arms": {
+        "1280": {
+          "elapsed_s": 88.5,
+          "detection": {
+            "n": 4,
+            "labels": {
+              "baseball bat": 1,
+              "sports ball": 1,
+              "person": 2
+            },
+            "person_n": 2,
+            "person_confs": [
+              0.759,
+              0.434
+            ],
+            "person_areas": [
+              0.1163,
+              0.2716
+            ],
+            "sports_n": 2,
+            "sports_labels": {
+              "baseball bat": 1,
+              "sports ball": 1
+            },
+            "animal_n": 0,
+            "animal_labels": {},
+            "small_n": 1,
+            "small_labels": {
+              "sports ball": 1
+            },
+            "weak_clutter_n": 0,
+            "weak_clutter_labels": {}
+          },
+          "graph_labels": {
+            "baseball bat": 1,
+            "sports ball": 1,
+            "person": 2
+          },
+          "graph_n": 4,
+          "people_count": 2,
+          "confirmed_activities": [],
+          "caption": "A young person is swinging a baseball bat at a white ball. Another person is also visible.",
+          "quality_overall": null,
+          "qa_passed": true
+        },
+        "640": {
+          "elapsed_s": 87.5,
+          "detection": {
+            "n": 3,
+            "labels": {
+              "baseball bat": 1,
+              "person": 1,
+              "sports ball": 1
+            },
+            "person_n": 1,
+            "person_confs": [
+              0.916
+            ],
+            "person_areas": [
+              0.4017
+            ],
+            "sports_n": 2,
+            "sports_labels": {
+              "baseball bat": 1,
+              "sports ball": 1
+            },
+            "animal_n": 0,
+            "animal_labels": {},
+            "small_n": 1,
+            "small_labels": {
+              "sports ball": 1
+            },
+            "weak_clutter_n": 0,
+            "weak_clutter_labels": {}
+          },
+          "graph_labels": {
+            "baseball bat": 1,
+            "person": 1,
+            "sports ball": 1
+          },
+          "graph_n": 3,
+          "people_count": 1,
+          "confirmed_activities": [],
+          "caption": "A single person in black clothing is outdoors, holding a green baseball bat towards a white sports ball.",
+          "quality_overall": null,
+          "qa_passed": true
+        }
+      },
+      "deltas": {
+        "person": 1,
+        "sports": 0,
+        "animal": 0,
+        "small": 0,
+        "weak_clutter": 0,
+        "graph_jaccard": 0.75,
+        "graph_identical": false,
+        "activity_identical": true,
+        "caption_identical": false
+      },
+      "winners": {
+        "person": "1280",
+        "sports": "tie",
+        "animal": "tie",
+        "small": "tie",
+        "fp_pressure": "tie"
+      },
+      "preference": "1280",
+      "flags": [
+        "person_delta=2-1",
+        "graph_diff",
+        "caption_diff"
+      ]
+    },
+    {
+      "id": "7_person_vehicle_bike",
+      "category": "bicycle multi people",
+      "path": "tmp\\uploads\\191003284_1025b0fb7d.jpg",
+      "file": "191003284_1025b0fb7d.jpg",
+      "arms": {
+        "1280": {
+          "elapsed_s": 112.0,
+          "detection": {
+            "n": 4,
+            "labels": {
+              "bicycle": 1,
+              "handbag": 1,
+              "person": 2
+            },
+            "person_n": 2,
+            "person_confs": [
+              0.571,
+              0.318
+            ],
+            "person_areas": [
+              0.1233,
+              0.078
+            ],
+            "sports_n": 0,
+            "sports_labels": {},
+            "animal_n": 0,
+            "animal_labels": {},
+            "small_n": 1,
+            "small_labels": {
+              "handbag": 1
+            },
+            "weak_clutter_n": 0,
+            "weak_clutter_labels": {}
+          },
+          "graph_labels": {
+            "bicycle": 1,
+            "handbag": 1,
+            "person": 2
+          },
+          "graph_n": 4,
+          "people_count": 2,
+          "confirmed_activities": [
+            {
+              "activity": "carrying a handbag",
+              "actors": [
+                "person_1",
+                "handbag_1"
+              ],
+              "conf": 0.822
+            }
+          ],
+          "caption": "One person is carrying a handbag. A bicycle is visible behind them. Another person is also visible.",
+          "quality_overall": null,
+          "qa_passed": true
+        },
+        "640": {
+          "elapsed_s": 111.5,
+          "detection": {
+            "n": 4,
+            "labels": {
+              "bicycle": 1,
+              "person": 2,
+              "handbag": 1
+            },
+            "person_n": 2,
+            "person_confs": [
+              0.837,
+              0.721
+            ],
+            "person_areas": [
+              0.2012,
+              0.0845
+            ],
+            "sports_n": 0,
+            "sports_labels": {},
+            "animal_n": 0,
+            "animal_labels": {},
+            "small_n": 1,
+            "small_labels": {
+              "handbag": 1
+            },
+            "weak_clutter_n": 0,
+            "weak_clutter_labels": {}
+          },
+          "graph_labels": {
+            "bicycle": 1,
+            "person": 2,
+            "handbag": 1
+          },
+          "graph_n": 4,
+          "people_count": 2,
+          "confirmed_activities": [
+            {
+              "activity": "riding a bicycle",
+              "actors": [
+                "person_1",
+                "bicycle_1"
+              ],
+              "conf": 0.88
+            }
+          ],
+          "caption": "One person is riding a bicycle. A handbag is visible behind them. Another person is also visible.",
+          "quality_overall": null,
+          "qa_passed": true
+        }
+      },
+      "deltas": {
+        "person": 0,
+        "sports": 0,
+        "animal": 0,
+        "small": 0,
+        "weak_clutter": 0,
+        "graph_jaccard": 1.0,
+        "graph_identical": true,
+        "activity_identical": false,
+        "caption_identical": false
+      },
+      "winners": {
+        "person": "tie",
+        "sports": "tie",
+        "animal": "tie",
+        "small": "tie",
+        "fp_pressure": "tie"
+      },
+      "preference": "equivalent",
+      "flags": [
+        "activity_diff",
+        "caption_diff"
+      ]
+    },
+    {
+      "id": "7b_person_vehicle_moto_alt",
+      "category": "motorcycle alt",
+      "path": "tmp\\uploads\\166321294_4a5e68535f.jpg",
+      "file": "166321294_4a5e68535f.jpg",
+      "arms": {
+        "1280": {
+          "elapsed_s": 74.3,
+          "detection": {
+            "n": 2,
+            "labels": {
+              "person": 1,
+              "motorcycle": 1
+            },
+            "person_n": 1,
+            "person_confs": [
+              0.896
+            ],
+            "person_areas": [
+              0.213
+            ],
+            "sports_n": 0,
+            "sports_labels": {},
+            "animal_n": 0,
+            "animal_labels": {},
+            "small_n": 0,
+            "small_labels": {},
+            "weak_clutter_n": 0,
+            "weak_clutter_labels": {}
+          },
+          "graph_labels": {
+            "person": 1,
+            "motorcycle": 1
+          },
+          "graph_n": 2,
+          "people_count": 1,
+          "confirmed_activities": [
+            {
+              "activity": "riding a motorcycle",
+              "actors": [
+                "person_1",
+                "motorcycle_1"
+              ],
+              "conf": 0.897
+            }
+          ],
+          "caption": "A person is riding a motorcycle on a road. The person is wearing brown clothing.",
+          "quality_overall": null,
+          "qa_passed": true
+        },
+        "640": {
+          "elapsed_s": 72.0,
+          "detection": {
+            "n": 2,
+            "labels": {
+              "motorcycle": 1,
+              "person": 1
+            },
+            "person_n": 1,
+            "person_confs": [
+              0.889
+            ],
+            "person_areas": [
+              0.3577
+            ],
+            "sports_n": 0,
+            "sports_labels": {},
+            "animal_n": 0,
+            "animal_labels": {},
+            "small_n": 0,
+            "small_labels": {},
+            "weak_clutter_n": 0,
+            "weak_clutter_labels": {}
+          },
+          "graph_labels": {
+            "motorcycle": 1,
+            "person": 1
+          },
+          "graph_n": 2,
+          "people_count": 1,
+          "confirmed_activities": [
+            {
+              "activity": "riding a motorcycle",
+              "actors": [
+                "person_1",
+                "motorcycle_1"
+              ],
+              "conf": 0.855
+            }
+          ],
+          "caption": "A person is riding a motorcycle on a road. The person is wearing burgundy clothing.",
+          "quality_overall": null,
+          "qa_passed": true
+        }
+      },
+      "deltas": {
+        "person": 0,
+        "sports": 0,
+        "animal": 0,
+        "small": 0,
+        "weak_clutter": 0,
+        "graph_jaccard": 1.0,
+        "graph_identical": true,
+        "activity_identical": true,
+        "caption_identical": false
+      },
+      "winners": {
+        "person": "tie",
+        "sports": "tie",
+        "animal": "tie",
+        "small": "tie",
+        "fp_pressure": "tie"
+      },
+      "preference": "equivalent",
+      "flags": [
+        "caption_diff"
+      ]
+    },
+    {
+      "id": "8_indoor_kitchen",
+      "category": "kitchen objects",
+      "path": "tmp\\uploads\\5e4dc9b3-589c-43c6-84b0-5620936c9df4.png",
+      "file": "5e4dc9b3-589c-43c6-84b0-5620936c9df4.png",
+      "arms": {
+        "1280": {
+          "elapsed_s": 150.9,
+          "detection": {
+            "n": 23,
+            "labels": {
+              "chair": 4,
+              "refrigerator": 2,
+              "clock": 1,
+              "vase": 1,
+              "cup": 1,
+              "couch": 1,
+              "potted plant": 7,
+              "person": 2,
+              "sink": 1,
+              "tv": 1,
+              "oven": 1,
+              "dining table": 1
+            },
+            "person_n": 2,
+            "person_confs": [
+              0.859,
+              0.641
+            ],
+            "person_areas": [
+              0.0746,
+              0.0433
+            ],
+            "sports_n": 0,
+            "sports_labels": {},
+            "animal_n": 0,
+            "animal_labels": {},
+            "small_n": 13,
+            "small_labels": {
+              "chair": 1,
+              "clock": 1,
+              "vase": 1,
+              "cup": 1,
+              "potted plant": 6,
+              "sink": 1,
+              "tv": 1,
+              "oven": 1
+            },
+            "weak_clutter_n": 1,
+            "weak_clutter_labels": {
+              "chair": 1
+            }
+          },
+          "graph_labels": {
+            "chair": 4,
+            "refrigerator": 2,
+            "clock": 1,
+            "vase": 1,
+            "cup": 1,
+            "couch": 1,
+            "potted plant": 7,
+            "person": 2,
+            "sink": 1,
+            "tv": 1,
+            "oven": 1,
+            "dining table": 1
+          },
+          "graph_n": 23,
+          "people_count": 2,
+          "confirmed_activities": [],
+          "caption": "Two people are together in a kitchen. The person is to the left of the scene, near a brown chair and a potted plant.",
+          "quality_overall": null,
+          "qa_passed": true
+        },
+        "640": {
+          "elapsed_s": 159.7,
+          "detection": {
+            "n": 20,
+            "labels": {
+              "chair": 4,
+              "refrigerator": 1,
+              "dining table": 1,
+              "cup": 1,
+              "vase": 1,
+              "clock": 1,
+              "couch": 1,
+              "potted plant": 6,
+              "person": 2,
+              "sink": 1,
+              "tv": 1
+            },
+            "person_n": 2,
+            "person_confs": [
+              0.821,
+              0.703
+            ],
+            "person_areas": [
+              0.0932,
+              0.0435
+            ],
+            "sports_n": 0,
+            "sports_labels": {},
+            "animal_n": 0,
+            "animal_labels": {},
+            "small_n": 11,
+            "small_labels": {
+              "chair": 1,
+              "cup": 1,
+              "vase": 1,
+              "clock": 1,
+              "potted plant": 5,
+              "sink": 1,
+              "tv": 1
+            },
+            "weak_clutter_n": 1,
+            "weak_clutter_labels": {
+              "potted plant": 1
+            }
+          },
+          "graph_labels": {
+            "chair": 4,
+            "refrigerator": 1,
+            "dining table": 1,
+            "cup": 1,
+            "vase": 1,
+            "clock": 1,
+            "couch": 1,
+            "potted plant": 6,
+            "person": 2,
+            "sink": 1,
+            "tv": 1
+          },
+          "graph_n": 20,
+          "people_count": 2,
+          "confirmed_activities": [],
+          "caption": "Two people are in a kitchen around a dining table. A white refrigerator, a brown couch, a sink, a tv, and beige cups are visible behind them. A beige cup and a brown vase sit on the table, while 4 brown chairs surround it.",
+          "quality_overall": null,
+          "qa_passed": true
+        }
+      },
+      "deltas": {
+        "person": 0,
+        "sports": 0,
+        "animal": 0,
+        "small": 2,
+        "weak_clutter": 0,
+        "graph_jaccard": 0.87,
+        "graph_identical": false,
+        "activity_identical": true,
+        "caption_identical": false
+      },
+      "winners": {
+        "person": "tie",
+        "sports": "tie",
+        "animal": "tie",
+        "small": "1280",
+        "fp_pressure": "tie"
+      },
+      "preference": "1280",
+      "flags": [
+        "graph_diff",
+        "caption_diff"
+      ]
+    },
+    {
+      "id": "9_outdoor_trail",
+      "category": "outdoor landscape/trail",
+      "path": "tmp\\uploads\\95728660_d47de66544.jpg",
+      "file": "95728660_d47de66544.jpg",
+      "arms": {
+        "1280": {
+          "elapsed_s": 73.1,
+          "detection": {
+            "n": 2,
+            "labels": {
+              "person": 1,
+              "bicycle": 1
+            },
+            "person_n": 1,
+            "person_confs": [
+              0.868
+            ],
+            "person_areas": [
+              0.0958
+            ],
+            "sports_n": 0,
+            "sports_labels": {},
+            "animal_n": 0,
+            "animal_labels": {},
+            "small_n": 0,
+            "small_labels": {},
+            "weak_clutter_n": 0,
+            "weak_clutter_labels": {}
+          },
+          "graph_labels": {
+            "person": 1,
+            "bicycle": 1
+          },
+          "graph_n": 2,
+          "people_count": 1,
+          "confirmed_activities": [
+            {
+              "activity": "riding a bicycle",
+              "actors": [
+                "person_1",
+                "bicycle_1"
+              ],
+              "conf": 0.896
+            }
+          ],
+          "caption": "The person is riding the bicycle on a dirt trail. The person is wearing black clothing.",
+          "quality_overall": null,
+          "qa_passed": true
+        },
+        "640": {
+          "elapsed_s": 73.5,
+          "detection": {
+            "n": 2,
+            "labels": {
+              "person": 1,
+              "bicycle": 1
+            },
+            "person_n": 1,
+            "person_confs": [
+              0.886
+            ],
+            "person_areas": [
+              0.1032
+            ],
+            "sports_n": 0,
+            "sports_labels": {},
+            "animal_n": 0,
+            "animal_labels": {},
+            "small_n": 0,
+            "small_labels": {},
+            "weak_clutter_n": 0,
+            "weak_clutter_labels": {}
+          },
+          "graph_labels": {
+            "person": 1,
+            "bicycle": 1
+          },
+          "graph_n": 2,
+          "people_count": 1,
+          "confirmed_activities": [
+            {
+              "activity": "riding a bicycle",
+              "actors": [
+                "person_1",
+                "bicycle_1"
+              ],
+              "conf": 0.9
+            }
+          ],
+          "caption": "A person is riding a bike on a dirt trail. A person riding a bicycle on the ground. The person is wearing a blue jacket. There is grass on the ground behind the person. There are large white clouds in the sky.",
+          "quality_overall": null,
+          "qa_passed": false
+        }
+      },
+      "deltas": {
+        "person": 0,
+        "sports": 0,
+        "animal": 0,
+        "small": 0,
+        "weak_clutter": 0,
+        "graph_jaccard": 1.0,
+        "graph_identical": true,
+        "activity_identical": true,
+        "caption_identical": false
+      },
+      "winners": {
+        "person": "tie",
+        "sports": "tie",
+        "animal": "tie",
+        "small": "tie",
+        "fp_pressure": "tie"
+      },
+      "preference": "equivalent",
+      "flags": [
+        "caption_diff"
+      ]
+    },
+    {
+      "id": "12_weak_activity",
+      "category": "animal/no-strong-human-act",
+      "path": "tmp\\uploads\\random_850976.jpg",
+      "file": "random_850976.jpg",
+      "arms": {
+        "1280": {
+          "elapsed_s": 68.6,
+          "detection": {
+            "n": 4,
+            "labels": {
+              "bear": 4
+            },
+            "person_n": 0,
+            "person_confs": [],
+            "person_areas": [],
+            "sports_n": 0,
+            "sports_labels": {},
+            "animal_n": 4,
+            "animal_labels": {
+              "bear": 4
+            },
+            "small_n": 0,
+            "small_labels": {},
+            "weak_clutter_n": 0,
+            "weak_clutter_labels": {}
+          },
+          "graph_labels": {
+            "bear": 4
+          },
+          "graph_n": 4,
+          "people_count": 0,
+          "confirmed_activities": [],
+          "caption": "A bear is at the heart of the scene.",
+          "quality_overall": null,
+          "qa_passed": true
+        },
+        "640": {
+          "elapsed_s": 63.1,
+          "detection": {
+            "n": 1,
+            "labels": {
+              "bear": 1
+            },
+            "person_n": 0,
+            "person_confs": [],
+            "person_areas": [],
+            "sports_n": 0,
+            "sports_labels": {},
+            "animal_n": 1,
+            "animal_labels": {
+              "bear": 1
+            },
+            "small_n": 0,
+            "small_labels": {},
+            "weak_clutter_n": 0,
+            "weak_clutter_labels": {}
+          },
+          "graph_labels": {
+            "bear": 1
+          },
+          "graph_n": 1,
+          "people_count": 0,
+          "confirmed_activities": [],
+          "caption": "A beige bear is at the heart of the scene.",
+          "quality_overall": null,
+          "qa_passed": true
+        }
+      },
+      "deltas": {
+        "person": 0,
+        "sports": 0,
+        "animal": 3,
+        "small": 0,
+        "weak_clutter": 0,
+        "graph_jaccard": 0.25,
+        "graph_identical": false,
+        "activity_identical": true,
+        "caption_identical": false
+      },
+      "winners": {
+        "person": "tie",
+        "sports": "tie",
+        "animal": "1280",
+        "small": "tie",
+        "fp_pressure": "tie"
+      },
+      "preference": "1280",
+      "flags": [
+        "animal_delta=4-1",
+        "graph_diff",
+        "caption_diff"
+      ]
+    },
+    {
+      "id": "16_dense_indoor",
+      "category": "dense indoor/group",
+      "path": "tmp\\uploads\\random_385406.jpg",
+      "file": "random_385406.jpg",
+      "arms": {
+        "1280": {
+          "elapsed_s": 106.5,
+          "detection": {
+            "n": 14,
+            "labels": {
+              "person": 12,
+              "tennis racket": 2
+            },
+            "person_n": 12,
+            "person_confs": [
+              0.921,
+              0.885,
+              0.819,
+              0.769,
+              0.754,
+              0.703,
+              0.693,
+              0.662,
+              0.64,
+              0.626,
+              0.484,
+              0.366
+            ],
+            "person_areas": [
+              0.0608,
+              0.0991,
+              0.0883,
+              0.1266,
+              0.0704,
+              0.0824,
+              0.0664,
+              0.0606,
+              0.024,
+              0.0623,
+              0.015,
+              0.0175
+            ],
+            "sports_n": 2,
+            "sports_labels": {
+              "tennis racket": 2
+            },
+            "animal_n": 0,
+            "animal_labels": {},
+            "small_n": 4,
+            "small_labels": {
+              "tennis racket": 2,
+              "person": 2
+            },
+            "weak_clutter_n": 0,
+            "weak_clutter_labels": {}
+          },
+          "graph_labels": {
+            "person": 12,
+            "tennis racket": 2
+          },
+          "graph_n": 14,
+          "people_count": 12,
+          "confirmed_activities": [
+            {
+              "activity": "playing with a tennis racket",
+              "actors": [
+                "person_6",
+                "tennis_racket_2"
+              ],
+              "conf": 0.9
+            }
+          ],
+          "caption": "Outdoors, a person is playing with a tennis racket, while several other people remain farther back.",
+          "quality_overall": null,
+          "qa_passed": true
+        },
+        "640": {
+          "elapsed_s": 104.3,
+          "detection": {
+            "n": 12,
+            "labels": {
+              "person": 10,
+              "tennis racket": 2
+            },
+            "person_n": 10,
+            "person_confs": [
+              0.911,
+              0.889,
+              0.867,
+              0.861,
+              0.854,
+              0.822,
+              0.778,
+              0.743,
+              0.617,
+              0.394
+            ],
+            "person_areas": [
+              0.1279,
+              0.0619,
+              0.1029,
+              0.0942,
+              0.0894,
+              0.0678,
+              0.0799,
+              0.0497,
+              0.0231,
+              0.0146
+            ],
+            "sports_n": 2,
+            "sports_labels": {
+              "tennis racket": 2
+            },
+            "animal_n": 0,
+            "animal_labels": {},
+            "small_n": 2,
+            "small_labels": {
+              "tennis racket": 1,
+              "person": 1
+            },
+            "weak_clutter_n": 0,
+            "weak_clutter_labels": {}
+          },
+          "graph_labels": {
+            "person": 10,
+            "tennis racket": 2
+          },
+          "graph_n": 12,
+          "people_count": 10,
+          "confirmed_activities": [
+            {
+              "activity": "playing with a tennis racket",
+              "actors": [
+                "person_6",
+                "tennis_racket_2"
+              ],
+              "conf": 0.9
+            },
+            {
+              "activity": "training",
+              "actors": [
+                "person_1",
+                "person_2",
+                "tennis_racket_1"
+              ],
+              "conf": 0.74
+            },
+            {
+              "activity": "holding a tennis racket",
+              "actors": [
+                "person_4",
+                "tennis_racket_2"
+              ],
+              "conf": 0.943
+            }
+          ],
+          "caption": "Another person is playing with a tennis racket. Outdoors, a person wearing red jacket and black pants is holding a tennis racket, while several other people remain farther back. Two people are training.",
+          "quality_overall": null,
+          "qa_passed": false
+        }
+      },
+      "deltas": {
+        "person": 2,
+        "sports": 0,
+        "animal": 0,
+        "small": 2,
+        "weak_clutter": 0,
+        "graph_jaccard": 0.857,
+        "graph_identical": false,
+        "activity_identical": false,
+        "caption_identical": false
+      },
+      "winners": {
+        "person": "1280",
+        "sports": "tie",
+        "animal": "tie",
+        "small": "1280",
+        "fp_pressure": "tie"
+      },
+      "preference": "1280",
+      "flags": [
+        "person_delta=12-10",
+        "graph_diff",
+        "activity_diff",
+        "caption_diff"
+      ]
+    },
+    {
+      "id": "17_outdoor_misc",
+      "category": "misc outdoor",
+      "path": "tmp\\uploads\\47870024_73a4481f7d.jpg",
+      "file": "47870024_73a4481f7d.jpg",
+      "arms": {
+        "1280": {
+          "elapsed_s": 110.5,
+          "detection": {
+            "n": 3,
+            "labels": {
+              "person": 2,
+              "skateboard": 1
+            },
+            "person_n": 2,
+            "person_confs": [
+              0.786,
+              0.697
+            ],
+            "person_areas": [
+              0.2096,
+              0.2616
+            ],
+            "sports_n": 1,
+            "sports_labels": {
+              "skateboard": 1
+            },
+            "animal_n": 0,
+            "animal_labels": {},
+            "small_n": 1,
+            "small_labels": {
+              "skateboard": 1
+            },
+            "weak_clutter_n": 0,
+            "weak_clutter_labels": {}
+          },
+          "graph_labels": {
+            "person": 2,
+            "skateboard": 1
+          },
+          "graph_n": 3,
+          "people_count": 2,
+          "confirmed_activities": [],
+          "caption": "2 people are visible. Alongside a skateboard.",
+          "quality_overall": null,
+          "qa_passed": true
+        },
+        "640": {
+          "elapsed_s": 109.4,
+          "detection": {
+            "n": 1,
+            "labels": {
+              "person": 1
+            },
+            "person_n": 1,
+            "person_confs": [
+              0.955
+            ],
+            "person_areas": [
+              0.3623
+            ],
+            "sports_n": 0,
+            "sports_labels": {},
+            "animal_n": 0,
+            "animal_labels": {},
+            "small_n": 0,
+            "small_labels": {},
+            "weak_clutter_n": 0,
+            "weak_clutter_labels": {}
+          },
+          "graph_labels": {
+            "person": 1
+          },
+          "graph_n": 1,
+          "people_count": 1,
+          "confirmed_activities": [],
+          "caption": "A person wearing light blue clothing is visible in the scene.",
+          "quality_overall": null,
+          "qa_passed": true
+        }
+      },
+      "deltas": {
+        "person": 1,
+        "sports": 1,
+        "animal": 0,
+        "small": 1,
+        "weak_clutter": 0,
+        "graph_jaccard": 0.333,
+        "graph_identical": false,
+        "activity_identical": true,
+        "caption_identical": false
+      },
+      "winners": {
+        "person": "1280",
+        "sports": "1280",
+        "animal": "tie",
+        "small": "1280",
+        "fp_pressure": "tie"
+      },
+      "preference": "1280",
+      "flags": [
+        "person_delta=2-1",
+        "sports_delta=1-0",
+        "graph_diff",
+        "caption_diff"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+[
+  {
+    "image": "random_268119.jpg",
+    "people_detected": 1,
+    "objects": [
+      "tv",
+      "tv",
+      "chair",
+      "chair",
+      "vase",
+      "dining table",
+      "chair",
+      "refrigerator",
+      "person"
+    ],
+    "stages": {
+      "template_raw": "A person wearing tan clothing is preparing food in a kitchen. A refrigerator, a vase, and 3 chairs are visible nearby.",
+      "defining_interaction": "looking at a dining table",
+      "people": "person",
+      "vlm_narrate": "The image depicts a brightly lit open-plan kitchen and dining area with a warm color palette dominated by yellow walls and wooden flooring. A person wearing a tan shirt stands observing the dining table, which is positioned in front of a refrigerator and several chairs including one maroon and brown chair. A television sits to the left of the fireplace, while a vase containing a red flower rests on the floor near a circular rug. The overall impression suggests a scene of kitchen preparation within a restaurant setting, with the person\u2019s focused attention directed at the dining table.",
+      "natural_final": "A person wearing tan clothing is preparing food in a kitchen. A refrigerator, a vase, and 3 chairs are visible nearby. 2 tvs are visible nearby. A dining table sits among the surrounding furnishings."
+    },
+    "locked_caption": "A person wearing tan clothing is preparing food in a kitchen. A refrigerator, a vase, and 3 chairs are visible nearby. 2 tvs are visible nearby. A dining table sits among the surrounding furnishings.",
+    "canonical_en": "A person wearing tan clothing is preparing food in a kitchen. A refrigerator, a vase, and 3 chairs are visible nearby. 2 tvs are visible nearby. A dining table sits among the surrounding furnishings.",
+    "sources": [
+      "ollama_semantic",
+      "florence_base",
+      "scene_reasoner",
+      "natural_caption"
+    ],
+    "robotic_failure": false,
+    "word_count": 34
+  },
+  {
+    "image": "random_385406.jpg",
+    "people_detected": 11,
+    "objects": [
+      "person",
+      "person",
+      "person",
+      "person",
+      "tennis racket",
+      "person",
+      "person",
+      "person",
+      "person",
+      "person",
+      "tennis racket",
+      "person"
+    ],
+    "stages": {
+      "template_raw": "A person wearing a coat is playing tennis. A other people is visible nearby. Other people are visible farther back.",
+      "defining_interaction": "playing with a tennis racket",
+      "people": "person #4,person #5,person #3,person #6,person #2",
+      "vlm_narrate": "A group of young tennis players stands together on a shaded outdoor court, surrounding a trophy. Several children are holding tennis rackets, including person #8 who is prominently featured in the foreground with a racket. Person #4 and person #5 stand nearby, while others form the background, creating a circle around the winning team. The overall scene depicts a moment of celebration and standing together after an event on the tennis court.",
+      "natural_final": "A person wearing a coat is playing tennis. Other people are visible farther back. A tennis racket belongs to the surrounding space."
+    },
+    "locked_caption": "A person wearing a coat is playing tennis. Other people are visible farther back. A tennis racket belongs to the surrounding space.",
+    "canonical_en": "A person wearing a coat is playing tennis. Other people are visible farther back. A tennis racket belongs to the surrounding space.",
+    "sources": [
+      "ollama_semantic",
+      "florence_base",
+      "scene_reasoner",
+      "natural_caption"
+    ],
+    "robotic_failure": false,
+    "word_count": 22
+  },
+  {
+    "image": "random_240850.jpg",
+    "people_detected": 2,
+    "objects": [
+      "person",
+      "person",
+      "baseball glove"
+    ],
+    "stages": {
+      "template_raw": "Two people are visible, with one nearer the camera and another farther back near a baseball glove.",
+      "defining_interaction": "",
+      "people": "person #2,person #1",
+      "vlm_narrate": "In the image, two individuals are standing in a baseball setting. Person #1, wearing a light blue shirt and sneakers, is positioned in the foreground with a baseball glove nearby. Person #2, dressed in dark green clothing including a cap, stands beside him also in a standing pose. The scene appears to be a typical outdoor baseball environment with minimal background details.",
+      "natural_final": "Two people are visible, with one nearer the camera and another farther back near a baseball glove."
+    },
+    "locked_caption": "Two men are running on a baseball field. One of the men is wearing a green baseball cap and a green shirt. The other man is wearing white baseball pants and a blue helmet. The field has green grass and large trees.",
+    "canonical_en": "Two men are running on a baseball field. One of the men is wearing a green baseball cap and a green shirt. The other man is wearing white baseball pants and a blue helmet. The field has green grass and large trees.",
+    "sources": [
+      "recovery",
+      "florence_base",
+      "natural_caption"
+    ],
+    "robotic_failure": false,
+    "word_count": 42
+  },
+  {
+    "image": "random_891568.jpg",
+    "people_detected": 2,
+    "objects": [
+      "person",
+      "person",
+      "baseball glove"
+    ],
+    "stages": {
+      "template_raw": "Two people are visible, with one nearer the camera and another farther back near a baseball glove.",
+      "defining_interaction": "",
+      "people": "person #2,person #1",
+      "vlm_narrate": "In the image, two individuals are standing in a baseball setting. Person #1, wearing a light blue shirt and sneakers, is positioned in the foreground with a baseball glove nearby. Person #2, dressed in dark green clothing including a cap, stands alongside him, also in a standing pose. The scene appears to be a typical outdoor baseball environment with minimal background details.",
+      "natural_final": "Two people are visible, with one nearer the camera and another farther back near a baseball glove."
+    },
+    "locked_caption": "Two men are running on a baseball field. One of the men is wearing a green baseball cap and a green shirt. The other man is wearing white baseball pants and a blue helmet. The field has green grass and large trees.",
+    "canonical_en": "Two men are running on a baseball field. One of the men is wearing a green baseball cap and a green shirt. The other man is wearing white baseball pants and a blue helmet. The field has green grass and large trees.",
+    "sources": [
+      "recovery",
+      "florence_base",
+      "natural_caption"
+    ],
+    "robotic_failure": false,
+    "word_count": 42
+  }
+]

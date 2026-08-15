@@ -1,0 +1,1028 @@
+{
+  "verdict": "PASS WITH ISSUES",
+  "summary": {
+    "rows": 18,
+    "unique_images": 11,
+    "fail": 0,
+    "issue": 2,
+    "missing": 0,
+    "critical_rows": 0,
+    "high_rows": 0
+  },
+  "results": [
+    {
+      "id": "1_single_person_activity",
+      "category": "motorcycle rider",
+      "path": "D:\\comptitions\\America competition(innoverse) 2026\\SENTIVIS AI\\tmp\\uploads\\143552829_72b6ba49d4.jpg",
+      "detected_objects": {
+        "person": 1,
+        "motorcycle": 1
+      },
+      "scene_graph_nodes": 2,
+      "person_nodes": 1,
+      "verified_people_count": 1,
+      "verified_activities": [
+        {
+          "activity": "riding a motorcycle",
+          "entity_ids": [
+            "person_1",
+            "motorcycle_1"
+          ],
+          "person_actors": [
+            "person_1"
+          ],
+          "n_person_actors": 1,
+          "confidence": 0.855
+        }
+      ],
+      "verified_relations": [
+        {
+          "type": "riding",
+          "subject": "person_1",
+          "object": "motorcycle_1"
+        }
+      ],
+      "environment": {
+        "indoor_outdoor": "outdoor",
+        "setting": "outdoor area",
+        "scene_type": "outdoor scene"
+      },
+      "final_caption": "A person is riding a dirt bike. A person, gloves and riding a bike on the water. Large rocks and grass on the ground next to the water. A brown motorcycle is visible behind them. A person is riding. A person is riding.",
+      "caption_actor_mentions": [
+        {
+          "subject": "a person",
+          "qty": 1,
+          "predicate": "is riding a dirt bike"
+        },
+        {
+          "subject": "a person",
+          "qty": 1,
+          "predicate": "is riding"
+        },
+        {
+          "subject": "a person",
+          "qty": 1,
+          "predicate": "is riding"
+        }
+      ],
+      "actor_ownership_ok": true,
+      "object_counts_ok": true,
+      "natural_notes": [],
+      "hallucination_risk": 0.25,
+      "evidence_consistency": 0.5208333333333333,
+      "object_coverage": 1.0,
+      "activity_coverage": null,
+      "relationship_coverage": 0.3333333333333333,
+      "overall_quality": 0.80535,
+      "failures": [
+        {
+          "code": "K",
+          "severity": "MEDIUM",
+          "detail": "Hallucination risk elevated (0.25)",
+          "likely_stage": "claim filtering / generation"
+        }
+      ],
+      "worst_severity": "MEDIUM",
+      "status": "ISSUE"
+    },
+    {
+      "id": "2_multi_shared_activity",
+      "category": "soccer shared play",
+      "path": "D:\\comptitions\\America competition(innoverse) 2026\\SENTIVIS AI\\tmp\\uploads\\47871819_db55ac4699.jpg",
+      "detected_objects": {
+        "person": 4,
+        "sports ball": 1
+      },
+      "scene_graph_nodes": 5,
+      "person_nodes": 4,
+      "verified_people_count": 4,
+      "verified_activities": [
+        {
+          "activity": "playing football",
+          "entity_ids": [
+            "person_1",
+            "person_3",
+            "sports_ball_1"
+          ],
+          "person_actors": [
+            "person_1",
+            "person_3"
+          ],
+          "n_person_actors": 2,
+          "confidence": 0.74
+        }
+      ],
+      "verified_relations": [],
+      "environment": {
+        "indoor_outdoor": "outdoor",
+        "setting": "recreational area",
+        "scene_type": "outdoor scene"
+      },
+      "final_caption": "Two people are playing football. A white sports ball rests in the scene.",
+      "caption_actor_mentions": [
+        {
+          "subject": "two people",
+          "qty": 2,
+          "predicate": "are playing football"
+        }
+      ],
+      "actor_ownership_ok": true,
+      "object_counts_ok": true,
+      "natural_notes": [
+        "thin caption for multi-person scene"
+      ],
+      "hallucination_risk": 0.0,
+      "evidence_consistency": 0.75,
+      "object_coverage": 1.0,
+      "activity_coverage": null,
+      "relationship_coverage": null,
+      "overall_quality": 0.9189999999999999,
+      "failures": [],
+      "worst_severity": null,
+      "status": "PASS"
+    },
+    {
+      "id": "3_multi_different_activities",
+      "category": "farm leading+holding",
+      "path": "D:\\comptitions\\America competition(innoverse) 2026\\SENTIVIS AI\\tmp\\uploads\\10815824_2997e03d76.jpg",
+      "detected_objects": {
+        "horse": 4,
+        "person": 1
+      },
+      "scene_graph_nodes": 5,
+      "person_nodes": 1,
+      "verified_people_count": 1,
+      "verified_activities": [
+        {
+          "activity": "leading a horse",
+          "entity_ids": [
+            "person_1",
+            "horse_1"
+          ],
+          "person_actors": [
+            "person_1"
+          ],
+          "n_person_actors": 1,
+          "confidence": 0.9
+        },
+        {
+          "activity": "holding a rope",
+          "entity_ids": [
+            "person_1",
+            "horse_1"
+          ],
+          "person_actors": [
+            "person_1"
+          ],
+          "n_person_actors": 1,
+          "confidence": 0.855
+        }
+      ],
+      "verified_relations": [
+        {
+          "type": "leading",
+          "subject": "person_1",
+          "object": "horse_1"
+        },
+        {
+          "type": "leading",
+          "subject": "person_1",
+          "object": "horse_4"
+        }
+      ],
+      "environment": {
+        "indoor_outdoor": "outdoor",
+        "setting": "outdoor area",
+        "scene_type": "outdoor scene"
+      },
+      "final_caption": "They are leading one of the horses, holding a rope in their hand as they moves it across the grassy area. A person wearing a cream-colored garment and a cap is in an outdoor setting with 4 brown horses. A fire is burning nearby. The arrangement of the horses \u2013 one on the left, one on the right, and one centrally located \u2013 creates a visually interesting composition within this outdoor scene.",
+      "caption_actor_mentions": [],
+      "actor_ownership_ok": true,
+      "object_counts_ok": true,
+      "natural_notes": [],
+      "hallucination_risk": 0.0,
+      "evidence_consistency": 0.9,
+      "object_coverage": 1.0,
+      "activity_coverage": 1.0,
+      "relationship_coverage": 1.0,
+      "overall_quality": 0.9736,
+      "failures": [],
+      "worst_severity": null,
+      "status": "PASS"
+    },
+    {
+      "id": "4_sports_soccer_alt",
+      "category": "football sports alt",
+      "path": "D:\\comptitions\\America competition(innoverse) 2026\\SENTIVIS AI\\tmp\\uploads\\141139674_246c0f90a1.jpg",
+      "detected_objects": {
+        "baseball bat": 1,
+        "sports ball": 1,
+        "person": 2
+      },
+      "scene_graph_nodes": 4,
+      "person_nodes": 2,
+      "verified_people_count": 2,
+      "verified_activities": [],
+      "verified_relations": [],
+      "environment": {
+        "indoor_outdoor": "outdoor",
+        "setting": "recreational area",
+        "scene_type": "outdoor scene"
+      },
+      "final_caption": "A young person is swinging a baseball bat at a white ball. They are, a blue shirt and black pants.",
+      "caption_actor_mentions": [],
+      "actor_ownership_ok": true,
+      "object_counts_ok": true,
+      "natural_notes": [],
+      "hallucination_risk": 0.25,
+      "evidence_consistency": 0.5833333333333334,
+      "object_coverage": 1.0,
+      "activity_coverage": null,
+      "relationship_coverage": null,
+      "overall_quality": 0.8106,
+      "failures": [
+        {
+          "code": "K",
+          "severity": "MEDIUM",
+          "detail": "Hallucination risk elevated (0.25)",
+          "likely_stage": "claim filtering / generation"
+        }
+      ],
+      "worst_severity": "MEDIUM",
+      "status": "ISSUE"
+    },
+    {
+      "id": "5_person_animal",
+      "category": "horse interaction",
+      "path": "D:\\comptitions\\America competition(innoverse) 2026\\SENTIVIS AI\\tmp\\uploads\\10815824_2997e03d76.jpg",
+      "detected_objects": {
+        "horse": 4,
+        "person": 1
+      },
+      "scene_graph_nodes": 5,
+      "person_nodes": 1,
+      "verified_people_count": 1,
+      "verified_activities": [
+        {
+          "activity": "leading a horse",
+          "entity_ids": [
+            "person_1",
+            "horse_1"
+          ],
+          "person_actors": [
+            "person_1"
+          ],
+          "n_person_actors": 1,
+          "confidence": 0.9
+        },
+        {
+          "activity": "holding a rope",
+          "entity_ids": [
+            "person_1",
+            "horse_1"
+          ],
+          "person_actors": [
+            "person_1"
+          ],
+          "n_person_actors": 1,
+          "confidence": 0.855
+        }
+      ],
+      "verified_relations": [
+        {
+          "type": "leading",
+          "subject": "person_1",
+          "object": "horse_1"
+        },
+        {
+          "type": "leading",
+          "subject": "person_1",
+          "object": "horse_4"
+        }
+      ],
+      "environment": {
+        "indoor_outdoor": "outdoor",
+        "setting": "outdoor area",
+        "scene_type": "outdoor scene"
+      },
+      "final_caption": "They are leading one of the horses, holding a rope in their hand as they moves it across the grassy area. A person wearing a cream-colored garment and a cap is in an outdoor setting with 4 brown horses. A fire is burning nearby. The arrangement of the horses \u2013 one on the left, one on the right, and one centrally located \u2013 creates a visually interesting composition within this outdoor scene.",
+      "caption_actor_mentions": [],
+      "actor_ownership_ok": true,
+      "object_counts_ok": true,
+      "natural_notes": [],
+      "hallucination_risk": 0.0,
+      "evidence_consistency": 0.9,
+      "object_coverage": 1.0,
+      "activity_coverage": 1.0,
+      "relationship_coverage": 1.0,
+      "overall_quality": 0.9736,
+      "failures": [],
+      "worst_severity": null,
+      "status": "PASS"
+    },
+    {
+      "id": "6_multi_animal",
+      "category": "two horses+fire",
+      "path": "D:\\comptitions\\America competition(innoverse) 2026\\SENTIVIS AI\\tmp\\uploads\\10815824_2997e03d76.jpg",
+      "detected_objects": {
+        "horse": 4,
+        "person": 1
+      },
+      "scene_graph_nodes": 5,
+      "person_nodes": 1,
+      "verified_people_count": 1,
+      "verified_activities": [
+        {
+          "activity": "leading a horse",
+          "entity_ids": [
+            "person_1",
+            "horse_1"
+          ],
+          "person_actors": [
+            "person_1"
+          ],
+          "n_person_actors": 1,
+          "confidence": 0.9
+        },
+        {
+          "activity": "holding a rope",
+          "entity_ids": [
+            "person_1",
+            "horse_1"
+          ],
+          "person_actors": [
+            "person_1"
+          ],
+          "n_person_actors": 1,
+          "confidence": 0.855
+        }
+      ],
+      "verified_relations": [
+        {
+          "type": "leading",
+          "subject": "person_1",
+          "object": "horse_1"
+        },
+        {
+          "type": "leading",
+          "subject": "person_1",
+          "object": "horse_4"
+        }
+      ],
+      "environment": {
+        "indoor_outdoor": "outdoor",
+        "setting": "outdoor area",
+        "scene_type": "outdoor scene"
+      },
+      "final_caption": "They are leading one of the horses, holding a rope in their hand as they moves it across the grassy area. A person wearing a cream-colored garment and a cap is in an outdoor setting with 4 brown horses. A fire is burning nearby. The arrangement of the horses \u2013 one on the left, one on the right, and one centrally located \u2013 creates a visually interesting composition within this outdoor scene.",
+      "caption_actor_mentions": [],
+      "actor_ownership_ok": true,
+      "object_counts_ok": true,
+      "natural_notes": [],
+      "hallucination_risk": 0.0,
+      "evidence_consistency": 0.9,
+      "object_coverage": 1.0,
+      "activity_coverage": 1.0,
+      "relationship_coverage": 1.0,
+      "overall_quality": 0.9736,
+      "failures": [],
+      "worst_severity": null,
+      "status": "PASS"
+    },
+    {
+      "id": "7_person_vehicle_bike",
+      "category": "bicycle multi people",
+      "path": "D:\\comptitions\\America competition(innoverse) 2026\\SENTIVIS AI\\tmp\\uploads\\191003284_1025b0fb7d.jpg",
+      "detected_objects": {
+        "bicycle": 1,
+        "handbag": 1,
+        "person": 2
+      },
+      "scene_graph_nodes": 4,
+      "person_nodes": 2,
+      "verified_people_count": 2,
+      "verified_activities": [
+        {
+          "activity": "carrying a handbag",
+          "entity_ids": [
+            "person_1",
+            "handbag_1"
+          ],
+          "person_actors": [
+            "person_1"
+          ],
+          "n_person_actors": 1,
+          "confidence": 0.8222041528250245
+        }
+      ],
+      "verified_relations": [
+        {
+          "type": "carrying",
+          "subject": "person_1",
+          "object": "handbag_1"
+        }
+      ],
+      "environment": {
+        "indoor_outdoor": "outdoor",
+        "setting": "outdoor area",
+        "scene_type": "outdoor scene"
+      },
+      "final_caption": "One person is carrying a handbag. A bicycle is visible behind them. Another person is also visible.",
+      "caption_actor_mentions": [
+        {
+          "subject": "one person",
+          "qty": 1,
+          "predicate": "is carrying a handbag"
+        }
+      ],
+      "actor_ownership_ok": true,
+      "object_counts_ok": true,
+      "natural_notes": [
+        "thin caption for multi-person scene"
+      ],
+      "hallucination_risk": 0.0,
+      "evidence_consistency": 0.75,
+      "object_coverage": 1.0,
+      "activity_coverage": null,
+      "relationship_coverage": 1.0,
+      "overall_quality": 0.9406,
+      "failures": [],
+      "worst_severity": null,
+      "status": "PASS"
+    },
+    {
+      "id": "7b_person_vehicle_moto_alt",
+      "category": "motorcycle alt",
+      "path": "D:\\comptitions\\America competition(innoverse) 2026\\SENTIVIS AI\\tmp\\uploads\\166321294_4a5e68535f.jpg",
+      "detected_objects": {
+        "person": 1,
+        "motorcycle": 1
+      },
+      "scene_graph_nodes": 2,
+      "person_nodes": 1,
+      "verified_people_count": 1,
+      "verified_activities": [
+        {
+          "activity": "riding a motorcycle",
+          "entity_ids": [
+            "person_1",
+            "motorcycle_1"
+          ],
+          "person_actors": [
+            "person_1"
+          ],
+          "n_person_actors": 1,
+          "confidence": 0.8966905837727596
+        }
+      ],
+      "verified_relations": [
+        {
+          "type": "riding",
+          "subject": "person_1",
+          "object": "motorcycle_1"
+        }
+      ],
+      "environment": {
+        "indoor_outdoor": "outdoor",
+        "setting": "outdoor area",
+        "scene_type": "outdoor scene"
+      },
+      "final_caption": "A person is riding a motorcycle on a road. The person is wearing brown clothing.",
+      "caption_actor_mentions": [
+        {
+          "subject": "a person",
+          "qty": 1,
+          "predicate": "is riding a motorcycle on a road"
+        }
+      ],
+      "actor_ownership_ok": true,
+      "object_counts_ok": true,
+      "natural_notes": [],
+      "hallucination_risk": 0.0,
+      "evidence_consistency": 0.6666666666666666,
+      "object_coverage": 1.0,
+      "activity_coverage": 1.0,
+      "relationship_coverage": 0.3333333333333333,
+      "overall_quality": 0.904,
+      "failures": [],
+      "worst_severity": null,
+      "status": "PASS"
+    },
+    {
+      "id": "8_indoor_kitchen",
+      "category": "kitchen objects",
+      "path": "D:\\comptitions\\America competition(innoverse) 2026\\SENTIVIS AI\\tmp\\uploads\\5e4dc9b3-589c-43c6-84b0-5620936c9df4.png",
+      "detected_objects": {
+        "chair": 4,
+        "refrigerator": 2,
+        "clock": 1,
+        "vase": 1,
+        "cup": 1,
+        "couch": 1,
+        "potted plant": 7,
+        "person": 2,
+        "sink": 1,
+        "tv": 1,
+        "oven": 1,
+        "dining table": 1
+      },
+      "scene_graph_nodes": 23,
+      "person_nodes": 2,
+      "verified_people_count": 2,
+      "verified_activities": [],
+      "verified_relations": [],
+      "environment": {
+        "indoor_outdoor": "indoor",
+        "setting": "kitchen",
+        "scene_type": "kitchen"
+      },
+      "final_caption": "Two people are in a kitchen. The person is near a brown chair and a potted plant, positioned beside the white refrigerator and a dining table.",
+      "caption_actor_mentions": [
+        {
+          "subject": "two people",
+          "qty": 2,
+          "predicate": "are in a kitchen"
+        }
+      ],
+      "actor_ownership_ok": true,
+      "object_counts_ok": true,
+      "natural_notes": [],
+      "hallucination_risk": 0.0,
+      "evidence_consistency": 0.5905797101449275,
+      "object_coverage": 0.6956521739130435,
+      "activity_coverage": null,
+      "relationship_coverage": 0.3333333333333333,
+      "overall_quality": 0.8571217391304348,
+      "failures": [],
+      "worst_severity": null,
+      "status": "PASS"
+    },
+    {
+      "id": "9_outdoor_trail",
+      "category": "outdoor landscape/trail",
+      "path": "D:\\comptitions\\America competition(innoverse) 2026\\SENTIVIS AI\\tmp\\uploads\\95728660_d47de66544.jpg",
+      "detected_objects": {
+        "person": 1,
+        "bicycle": 1
+      },
+      "scene_graph_nodes": 2,
+      "person_nodes": 1,
+      "verified_people_count": 1,
+      "verified_activities": [
+        {
+          "activity": "riding a bicycle",
+          "entity_ids": [
+            "person_1",
+            "bicycle_1"
+          ],
+          "person_actors": [
+            "person_1"
+          ],
+          "n_person_actors": 1,
+          "confidence": 0.8956259721631772
+        }
+      ],
+      "verified_relations": [
+        {
+          "type": "riding",
+          "subject": "person_1",
+          "object": "bicycle_1"
+        }
+      ],
+      "environment": {
+        "indoor_outdoor": "outdoor",
+        "setting": "outdoor trail",
+        "scene_type": "natural environment"
+      },
+      "final_caption": "The person\u2019s posture indicates they are riding the bicycle, while grass surrounds them on the ground. The scene unfolds outdoors with a dirt trail visible beneath the bicycle at the bottom left of the image.",
+      "caption_actor_mentions": [],
+      "actor_ownership_ok": true,
+      "object_counts_ok": true,
+      "natural_notes": [],
+      "hallucination_risk": 0.0,
+      "evidence_consistency": 0.7666666666666666,
+      "object_coverage": 1.0,
+      "activity_coverage": 1.0,
+      "relationship_coverage": 0.3333333333333333,
+      "overall_quality": 0.9496,
+      "failures": [],
+      "worst_severity": null,
+      "status": "PASS"
+    },
+    {
+      "id": "10_group_sports",
+      "category": "soccer group",
+      "path": "D:\\comptitions\\America competition(innoverse) 2026\\SENTIVIS AI\\tmp\\uploads\\47871819_db55ac4699.jpg",
+      "detected_objects": {
+        "person": 4,
+        "sports ball": 1
+      },
+      "scene_graph_nodes": 5,
+      "person_nodes": 4,
+      "verified_people_count": 4,
+      "verified_activities": [
+        {
+          "activity": "playing football",
+          "entity_ids": [
+            "person_1",
+            "person_3",
+            "sports_ball_1"
+          ],
+          "person_actors": [
+            "person_1",
+            "person_3"
+          ],
+          "n_person_actors": 2,
+          "confidence": 0.74
+        }
+      ],
+      "verified_relations": [],
+      "environment": {
+        "indoor_outdoor": "outdoor",
+        "setting": "recreational area",
+        "scene_type": "outdoor scene"
+      },
+      "final_caption": "Two people are playing football. A white sports ball rests in the scene.",
+      "caption_actor_mentions": [
+        {
+          "subject": "two people",
+          "qty": 2,
+          "predicate": "are playing football"
+        }
+      ],
+      "actor_ownership_ok": true,
+      "object_counts_ok": true,
+      "natural_notes": [
+        "thin caption for multi-person scene"
+      ],
+      "hallucination_risk": 0.0,
+      "evidence_consistency": 0.75,
+      "object_coverage": 1.0,
+      "activity_coverage": null,
+      "relationship_coverage": null,
+      "overall_quality": 0.9189999999999999,
+      "failures": [],
+      "worst_severity": null,
+      "status": "PASS"
+    },
+    {
+      "id": "11_many_objects",
+      "category": "kitchen dense objects",
+      "path": "D:\\comptitions\\America competition(innoverse) 2026\\SENTIVIS AI\\tmp\\uploads\\5e4dc9b3-589c-43c6-84b0-5620936c9df4.png",
+      "detected_objects": {
+        "chair": 4,
+        "refrigerator": 2,
+        "clock": 1,
+        "vase": 1,
+        "cup": 1,
+        "couch": 1,
+        "potted plant": 7,
+        "person": 2,
+        "sink": 1,
+        "tv": 1,
+        "oven": 1,
+        "dining table": 1
+      },
+      "scene_graph_nodes": 23,
+      "person_nodes": 2,
+      "verified_people_count": 2,
+      "verified_activities": [],
+      "verified_relations": [],
+      "environment": {
+        "indoor_outdoor": "indoor",
+        "setting": "kitchen",
+        "scene_type": "kitchen"
+      },
+      "final_caption": "Two people are in a kitchen. The person is near a brown chair and a potted plant, positioned beside the white refrigerator and a dining table.",
+      "caption_actor_mentions": [
+        {
+          "subject": "two people",
+          "qty": 2,
+          "predicate": "are in a kitchen"
+        }
+      ],
+      "actor_ownership_ok": true,
+      "object_counts_ok": true,
+      "natural_notes": [],
+      "hallucination_risk": 0.0,
+      "evidence_consistency": 0.5905797101449275,
+      "object_coverage": 0.6956521739130435,
+      "activity_coverage": null,
+      "relationship_coverage": 0.3333333333333333,
+      "overall_quality": 0.8571217391304348,
+      "failures": [],
+      "worst_severity": null,
+      "status": "PASS"
+    },
+    {
+      "id": "12_weak_activity",
+      "category": "animal/no-strong-human-act",
+      "path": "D:\\comptitions\\America competition(innoverse) 2026\\SENTIVIS AI\\tmp\\uploads\\random_850976.jpg",
+      "detected_objects": {
+        "bear": 4
+      },
+      "scene_graph_nodes": 4,
+      "person_nodes": 0,
+      "verified_people_count": 0,
+      "verified_activities": [],
+      "verified_relations": [],
+      "environment": {
+        "indoor_outdoor": "outdoor",
+        "setting": "outdoor area",
+        "scene_type": "natural environment"
+      },
+      "final_caption": "A bear is at the heart of the scene.",
+      "caption_actor_mentions": [],
+      "actor_ownership_ok": true,
+      "object_counts_ok": true,
+      "natural_notes": [],
+      "hallucination_risk": 0.0,
+      "evidence_consistency": 0.6666666666666666,
+      "object_coverage": 1.0,
+      "activity_coverage": null,
+      "relationship_coverage": null,
+      "overall_quality": 0.916,
+      "failures": [],
+      "worst_severity": null,
+      "status": "PASS"
+    },
+    {
+      "id": "13_overlap_people",
+      "category": "soccer overlap",
+      "path": "D:\\comptitions\\America competition(innoverse) 2026\\SENTIVIS AI\\tmp\\uploads\\47871819_db55ac4699.jpg",
+      "detected_objects": {
+        "person": 4,
+        "sports ball": 1
+      },
+      "scene_graph_nodes": 5,
+      "person_nodes": 4,
+      "verified_people_count": 4,
+      "verified_activities": [
+        {
+          "activity": "playing football",
+          "entity_ids": [
+            "person_1",
+            "person_3",
+            "sports_ball_1"
+          ],
+          "person_actors": [
+            "person_1",
+            "person_3"
+          ],
+          "n_person_actors": 2,
+          "confidence": 0.74
+        }
+      ],
+      "verified_relations": [],
+      "environment": {
+        "indoor_outdoor": "outdoor",
+        "setting": "recreational area",
+        "scene_type": "outdoor scene"
+      },
+      "final_caption": "Two people are playing football. A white sports ball rests in the scene.",
+      "caption_actor_mentions": [
+        {
+          "subject": "two people",
+          "qty": 2,
+          "predicate": "are playing football"
+        }
+      ],
+      "actor_ownership_ok": true,
+      "object_counts_ok": true,
+      "natural_notes": [
+        "thin caption for multi-person scene"
+      ],
+      "hallucination_risk": 0.0,
+      "evidence_consistency": 0.75,
+      "object_coverage": 1.0,
+      "activity_coverage": null,
+      "relationship_coverage": null,
+      "overall_quality": 0.9189999999999999,
+      "failures": [],
+      "worst_severity": null,
+      "status": "PASS"
+    },
+    {
+      "id": "14_subset_participants",
+      "category": "soccer 2 of N playing",
+      "path": "D:\\comptitions\\America competition(innoverse) 2026\\SENTIVIS AI\\tmp\\uploads\\47871819_db55ac4699.jpg",
+      "detected_objects": {
+        "person": 4,
+        "sports ball": 1
+      },
+      "scene_graph_nodes": 5,
+      "person_nodes": 4,
+      "verified_people_count": 4,
+      "verified_activities": [
+        {
+          "activity": "playing football",
+          "entity_ids": [
+            "person_1",
+            "person_3",
+            "sports_ball_1"
+          ],
+          "person_actors": [
+            "person_1",
+            "person_3"
+          ],
+          "n_person_actors": 2,
+          "confidence": 0.74
+        }
+      ],
+      "verified_relations": [],
+      "environment": {
+        "indoor_outdoor": "outdoor",
+        "setting": "recreational area",
+        "scene_type": "outdoor scene"
+      },
+      "final_caption": "Two people are playing football. A white sports ball rests in the scene.",
+      "caption_actor_mentions": [
+        {
+          "subject": "two people",
+          "qty": 2,
+          "predicate": "are playing football"
+        }
+      ],
+      "actor_ownership_ok": true,
+      "object_counts_ok": true,
+      "natural_notes": [
+        "thin caption for multi-person scene"
+      ],
+      "hallucination_risk": 0.0,
+      "evidence_consistency": 0.75,
+      "object_coverage": 1.0,
+      "activity_coverage": null,
+      "relationship_coverage": null,
+      "overall_quality": 0.9189999999999999,
+      "failures": [],
+      "worst_severity": null,
+      "status": "PASS"
+    },
+    {
+      "id": "15_simultaneous_activities",
+      "category": "farm dual acts",
+      "path": "D:\\comptitions\\America competition(innoverse) 2026\\SENTIVIS AI\\tmp\\uploads\\10815824_2997e03d76.jpg",
+      "detected_objects": {
+        "horse": 4,
+        "person": 1
+      },
+      "scene_graph_nodes": 5,
+      "person_nodes": 1,
+      "verified_people_count": 1,
+      "verified_activities": [
+        {
+          "activity": "leading a horse",
+          "entity_ids": [
+            "person_1",
+            "horse_1"
+          ],
+          "person_actors": [
+            "person_1"
+          ],
+          "n_person_actors": 1,
+          "confidence": 0.9
+        },
+        {
+          "activity": "holding a rope",
+          "entity_ids": [
+            "person_1",
+            "horse_1"
+          ],
+          "person_actors": [
+            "person_1"
+          ],
+          "n_person_actors": 1,
+          "confidence": 0.855
+        }
+      ],
+      "verified_relations": [
+        {
+          "type": "leading",
+          "subject": "person_1",
+          "object": "horse_1"
+        },
+        {
+          "type": "leading",
+          "subject": "person_1",
+          "object": "horse_4"
+        }
+      ],
+      "environment": {
+        "indoor_outdoor": "outdoor",
+        "setting": "outdoor area",
+        "scene_type": "outdoor scene"
+      },
+      "final_caption": "They are leading one of the horses, holding a rope in their hand as they moves it across the grassy area. A person wearing a cream-colored garment and a cap is in an outdoor setting with 4 brown horses. A fire is burning nearby. The arrangement of the horses \u2013 one on the left, one on the right, and one centrally located \u2013 creates a visually interesting composition within this outdoor scene.",
+      "caption_actor_mentions": [],
+      "actor_ownership_ok": true,
+      "object_counts_ok": true,
+      "natural_notes": [],
+      "hallucination_risk": 0.0,
+      "evidence_consistency": 0.9,
+      "object_coverage": 1.0,
+      "activity_coverage": 1.0,
+      "relationship_coverage": 1.0,
+      "overall_quality": 0.9736,
+      "failures": [],
+      "worst_severity": null,
+      "status": "PASS"
+    },
+    {
+      "id": "16_dense_indoor",
+      "category": "dense indoor/group",
+      "path": "D:\\comptitions\\America competition(innoverse) 2026\\SENTIVIS AI\\tmp\\uploads\\random_385406.jpg",
+      "detected_objects": {
+        "person": 12,
+        "tennis racket": 2
+      },
+      "scene_graph_nodes": 14,
+      "person_nodes": 12,
+      "verified_people_count": 12,
+      "verified_activities": [
+        {
+          "activity": "playing with a tennis racket",
+          "entity_ids": [
+            "person_6",
+            "tennis_racket_2"
+          ],
+          "person_actors": [
+            "person_6"
+          ],
+          "n_person_actors": 1,
+          "confidence": 0.9
+        }
+      ],
+      "verified_relations": [
+        {
+          "type": "playing_with",
+          "subject": "person_6",
+          "object": "tennis_racket_2"
+        },
+        {
+          "type": "playing_with",
+          "subject": "person_8",
+          "object": "tennis_racket_2"
+        },
+        {
+          "type": "playing_with",
+          "subject": "person_10",
+          "object": "tennis_racket_1"
+        }
+      ],
+      "environment": {
+        "indoor_outdoor": "outdoor",
+        "setting": "recreational area",
+        "scene_type": "outdoor scene"
+      },
+      "final_caption": "People are playing with a tennis racket outdoors. The person is wearing black clothing.",
+      "caption_actor_mentions": [],
+      "actor_ownership_ok": true,
+      "object_counts_ok": true,
+      "natural_notes": [
+        "thin caption for multi-person scene"
+      ],
+      "hallucination_risk": 0.0,
+      "evidence_consistency": 0.8384615384615385,
+      "object_coverage": 1.0,
+      "activity_coverage": 1.0,
+      "relationship_coverage": 0.6923076923076923,
+      "overall_quality": 0.9349230769230769,
+      "failures": [],
+      "worst_severity": null,
+      "status": "PASS"
+    },
+    {
+      "id": "17_outdoor_misc",
+      "category": "misc outdoor",
+      "path": "D:\\comptitions\\America competition(innoverse) 2026\\SENTIVIS AI\\tmp\\uploads\\47870024_73a4481f7d.jpg",
+      "detected_objects": {
+        "person": 2,
+        "skateboard": 1
+      },
+      "scene_graph_nodes": 3,
+      "person_nodes": 2,
+      "verified_people_count": 2,
+      "verified_activities": [],
+      "verified_relations": [],
+      "environment": {
+        "indoor_outdoor": "outdoor",
+        "setting": "recreational area",
+        "scene_type": "outdoor scene"
+      },
+      "final_caption": "Two people and a skateboard are visible outdoors.",
+      "caption_actor_mentions": [],
+      "actor_ownership_ok": true,
+      "object_counts_ok": true,
+      "natural_notes": [],
+      "hallucination_risk": 0.0,
+      "evidence_consistency": 0.8333333333333334,
+      "object_coverage": 1.0,
+      "activity_coverage": null,
+      "relationship_coverage": null,
+      "overall_quality": 0.9460000000000001,
+      "failures": [],
+      "worst_severity": null,
+      "status": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+"""Dark theme design tokens."""
+
+from ui.design.tokens import DesignTokens
+
+DARK_TOKENS = DesignTokens(
+    primary="#FF3FA4",
+    secondary="#FF63B8",
+    accent="#FF3FA4",
+    background="#12091F",
+    surface="#1B1232",
+    card="#241843",
+    border="#FF3FA4",
+    success="#3DDC97",
+    warning="#FFC857",
+    error="#FF6B6B",
+    text_primary="#FFFFFF",
+    text_secondary="#D7CFE8",
+    radius_sm=8,
+    radius_md=12,
+    radius_lg=16,
+    spacing_xs=6,
+    spacing_sm=10,
+    spacing_md=14,
+    spacing_lg=22,
+    animation_ms=240,
+    icon_sm=14,
+    icon_md=18,
+    icon_lg=24,
+    font_family="Segoe UI",
+    font_size_sm=9,
+    font_size_md=10,
+    font_size_lg=12,
+    font_size_xl=20,
+    focus_ring="#FF3FA4",
+)

@@ -1,0 +1,53 @@
+{
+  "image": "10815824_2997e03d76.jpg",
+  "caption": "On a grassy field, a person in a black sweatshirt holds a rope while leading a large brown horse, while another person and another horse stand farther back in the field.",
+  "grammar_score": 1.0,
+  "has_with_one_is": false,
+  "robotic_failure": false,
+  "suggestions": [
+    "Is there fire or smoke visible in the scene?",
+    "How many people are visible in total?",
+    "What color is the other horse?",
+    "What color clothing is the second person wearing?",
+    "What color clothing is the person wearing?"
+  ],
+  "colors": [
+    "0:color=olive",
+    "0:dominant_color=olive",
+    "1:color=khaki",
+    "1:dominant_color=khaki",
+    "1:secondary_color=brown",
+    "2:color=khaki",
+    "2:dominant_color=khaki",
+    "2:secondary_color=brown",
+    "2:shirt_color=khaki",
+    "2:pants_color=red",
+    "2:shoes_color=beige",
+    "2:clothing_color=khaki",
+    "2:secondary_color=brown",
+    "3:color=tan",
+    "3:dominant_color=tan",
+    "3:hair_color=khaki"
+  ],
+  "relationships_ui": "- person leading horse (confidence: 81%)",
+  "relationships_metric": 1,
+  "meaningful_relation_count": 1,
+  "objects_metric": 4,
+  "objects_ui": "- 2\u00d7 horse\n- 2\u00d7 person\n- fire (confidence: 89%)\n\nObject instances (graph + verified hazards): 5",
+  "enhancement": {
+    "level": "LOW",
+    "applied": true,
+    "true_sr": true,
+    "before": 0.8177879482502121,
+    "after": 0.8074753687588712,
+    "improvement": 11.58634234254624,
+    "ops": [
+      "super_resolution:realesrgan:realesr-general-x4v3"
+    ],
+    "reason": ""
+  },
+  "ram_mb": {
+    "before": 263.0,
+    "after": 2279.1
+  }
+}

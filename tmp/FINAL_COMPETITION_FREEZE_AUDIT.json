@@ -1,0 +1,670 @@
+{
+  "n": 11,
+  "rows": [
+    {
+      "name": "soccer",
+      "tier": "critical",
+      "path": "tmp\\uploads\\47871819_db55ac4699.jpg",
+      "graph_labels": {
+        "person": 4,
+        "sports ball": 1
+      },
+      "people_graph": 4,
+      "people_ve": 4,
+      "confirmed_activities": [
+        {
+          "activity": "playing football",
+          "entity_ids": [
+            "person_1",
+            "person_3",
+            "sports_ball_1"
+          ],
+          "person_actors": [
+            "person_1",
+            "person_3"
+          ],
+          "n_person_actors": 2,
+          "confidence": 0.74
+        }
+      ],
+      "relations": [],
+      "environment": {
+        "scene_type": "outdoor scene",
+        "setting": "recreational area",
+        "indoor_outdoor": "outdoor",
+        "evidence": [
+          "Outdoor object labels present.",
+          "4 people detected.",
+          "0 relationships in scene graph.",
+          "Outdoor scene without rain/snow cues.",
+          "Atmosphere: busy."
+        ]
+      },
+      "caption": "Two people are playing football. The location is to be a crowded area with 4 people present. A white sports ball rests in the scene.",
+      "quality_overall": null,
+      "qa_passed": true,
+      "flags": [
+        {
+          "severity": "INFO",
+          "code": "soccer_actor_ok",
+          "detail": "Two-actor football caption preserved"
+        }
+      ],
+      "worst": "INFO"
+    },
+    {
+      "name": "farm",
+      "tier": "critical",
+      "path": "tmp\\uploads\\10815824_2997e03d76.jpg",
+      "graph_labels": {
+        "horse": 4,
+        "person": 1
+      },
+      "people_graph": 1,
+      "people_ve": 1,
+      "confirmed_activities": [
+        {
+          "activity": "leading a horse",
+          "entity_ids": [
+            "person_1",
+            "horse_1"
+          ],
+          "person_actors": [
+            "person_1"
+          ],
+          "n_person_actors": 1,
+          "confidence": 0.9
+        },
+        {
+          "activity": "holding a rope",
+          "entity_ids": [
+            "person_1",
+            "horse_1"
+          ],
+          "person_actors": [
+            "person_1"
+          ],
+          "n_person_actors": 1,
+          "confidence": 0.855
+        }
+      ],
+      "relations": [
+        {
+          "type": "leading",
+          "subject": "person_1",
+          "object": "horse_1",
+          "conf": 0.815
+        },
+        {
+          "type": "leading",
+          "subject": "person_1",
+          "object": "horse_4",
+          "conf": 0.738
+        }
+      ],
+      "environment": {
+        "scene_type": "outdoor scene",
+        "setting": "outdoor area",
+        "indoor_outdoor": "outdoor",
+        "evidence": [
+          "Outdoor object labels present.",
+          "One person detected.",
+          "4 relationships in scene graph.",
+          "Outdoor scene without rain/snow cues.",
+          "Activities: leading a horse",
+          "Atmosphere: neutral.",
+          "Hazard detected: fire (confidence: 89%)"
+        ]
+      },
+      "caption": "A person in a cream-colored garment is on the grass with a cap, leading one of three brown horses. A person is holding a rope. This suggests an activity involving guiding a horse outdoors, with the person taking the lead. A fire is burning nearby. The horses are positioned across the outdoors; one is located to the left, another to the right, and a third sits centrally.",
+      "quality_overall": null,
+      "qa_passed": true,
+      "flags": [
+        {
+          "severity": "MEDIUM",
+          "code": "farm_second_person_yolo_miss",
+          "detail": "Only 1 person detected at imgsz=1280 (known YOLO miss; freeze decision accepted)"
+        },
+        {
+          "severity": "INFO",
+          "code": "farm_dual_activity_ok",
+          "detail": "Leading + rope expressed without obvious dup"
+        }
+      ],
+      "worst": "MEDIUM"
+    },
+    {
+      "name": "motorcycle",
+      "tier": "critical",
+      "path": "tmp\\uploads\\143552829_72b6ba49d4.jpg",
+      "graph_labels": {
+        "person": 1,
+        "motorcycle": 1
+      },
+      "people_graph": 1,
+      "people_ve": 1,
+      "confirmed_activities": [
+        {
+          "activity": "riding a motorcycle",
+          "entity_ids": [
+            "person_1",
+            "motorcycle_1"
+          ],
+          "person_actors": [
+            "person_1"
+          ],
+          "n_person_actors": 1,
+          "confidence": 0.855
+        }
+      ],
+      "relations": [
+        {
+          "type": "riding",
+          "subject": "person_1",
+          "object": "motorcycle_1",
+          "conf": 0.88
+        }
+      ],
+      "environment": {
+        "scene_type": "outdoor scene",
+        "setting": "outdoor area",
+        "indoor_outdoor": "outdoor",
+        "evidence": [
+          "Vehicle proximity detected in scene graph.",
+          "Outdoor object labels present.",
+          "One person detected.",
+          "2 relationships in scene graph.",
+          "Outdoor scene without rain/snow cues.",
+          "Atmosphere: neutral."
+        ]
+      },
+      "caption": "A man is riding a dirt bike. Large rocks and grass on the ground next to the water. A brown motorcycle is visible behind them. He is wearing a red jacket and orange pants. He has a helmet on his head and goggles on his eyes. The bike has a number on the front of it.",
+      "quality_overall": null,
+      "qa_passed": false,
+      "flags": [
+        {
+          "severity": "HIGH",
+          "code": "motorcycle_water_hallucination",
+          "detail": "Caption mentions water \u2014 verify visual support; likely VLM hallucination if unsupported"
+        },
+        {
+          "severity": "INFO",
+          "code": "motorcycle_activity_present",
+          "detail": "Riding/motorcycle retained"
+        }
+      ],
+      "worst": "HIGH"
+    },
+    {
+      "name": "bicycle",
+      "tier": "critical",
+      "path": "tmp\\uploads\\191003284_1025b0fb7d.jpg",
+      "graph_labels": {
+        "bicycle": 1,
+        "handbag": 1,
+        "person": 2
+      },
+      "people_graph": 2,
+      "people_ve": 2,
+      "confirmed_activities": [
+        {
+          "activity": "carrying a handbag",
+          "entity_ids": [
+            "person_1",
+            "handbag_1"
+          ],
+          "person_actors": [
+            "person_1"
+          ],
+          "n_person_actors": 1,
+          "confidence": 0.822
+        }
+      ],
+      "relations": [
+        {
+          "type": "carrying",
+          "subject": "person_1",
+          "object": "handbag_1",
+          "conf": 0.822
+        }
+      ],
+      "environment": {
+        "scene_type": "outdoor scene",
+        "setting": "outdoor area",
+        "indoor_outdoor": "outdoor",
+        "evidence": [
+          "Vehicle proximity detected in scene graph.",
+          "Outdoor object labels present.",
+          "Two people detected.",
+          "11 relationships in scene graph.",
+          "Outdoor scene without rain/snow cues.",
+          "Atmosphere: casual."
+        ]
+      },
+      "caption": "A person is outdoors near a bicycle, while a little person rides on the back of it. Two people are visible. Another person is carrying a handbag.",
+      "quality_overall": null,
+      "qa_passed": true,
+      "flags": [
+        {
+          "severity": "MEDIUM",
+          "code": "bicycle_riding_not_confirmed",
+          "detail": "Bicycle present; riding not CONFIRMED / not in caption (frozen activity system)"
+        }
+      ],
+      "worst": "MEDIUM"
+    },
+    {
+      "name": "baseball",
+      "tier": "residual",
+      "path": "tmp\\uploads\\141139674_246c0f90a1.jpg",
+      "graph_labels": {
+        "baseball bat": 1,
+        "sports ball": 1,
+        "person": 2
+      },
+      "people_graph": 2,
+      "people_ve": 2,
+      "confirmed_activities": [],
+      "relations": [],
+      "environment": {
+        "scene_type": "outdoor scene",
+        "setting": "recreational area",
+        "indoor_outdoor": "outdoor",
+        "evidence": [
+          "Outdoor object labels present.",
+          "Two people detected.",
+          "0 relationships in scene graph.",
+          "Outdoor scene without rain/snow cues.",
+          "Atmosphere: casual."
+        ]
+      },
+      "caption": "A young person is swinging a baseball bat at a white ball.",
+      "quality_overall": null,
+      "qa_passed": true,
+      "flags": [
+        {
+          "severity": "INFO",
+          "code": "baseball_core_ok",
+          "detail": "Core bat/swing content present"
+        }
+      ],
+      "worst": "INFO"
+    },
+    {
+      "name": "kitchen",
+      "tier": "general",
+      "path": "tmp\\uploads\\5e4dc9b3-589c-43c6-84b0-5620936c9df4.png",
+      "graph_labels": {
+        "chair": 4,
+        "refrigerator": 2,
+        "clock": 1,
+        "vase": 1,
+        "cup": 1,
+        "couch": 1,
+        "potted plant": 7,
+        "person": 2,
+        "sink": 1,
+        "tv": 1,
+        "oven": 1,
+        "dining table": 1
+      },
+      "people_graph": 2,
+      "people_ve": 2,
+      "confirmed_activities": [],
+      "relations": [
+        {
+          "type": "inside",
+          "subject": "chair_3",
+          "object": "dining_table_1",
+          "conf": 0.727
+        },
+        {
+          "type": "near",
+          "subject": "potted_plant_4",
+          "object": "potted_plant_5",
+          "conf": 0.759
+        },
+        {
+          "type": "next_to",
+          "subject": "potted_plant_4",
+          "object": "potted_plant_5",
+          "conf": 0.82
+        },
+        {
+          "type": "near",
+          "subject": "potted_plant_4",
+          "object": "potted_plant_6",
+          "conf": 0.725
+        },
+        {
+          "type": "next_to",
+          "subject": "potted_plant_4",
+          "object": "potted_plant_6",
+          "conf": 0.791
+        },
+        {
+          "type": "next_to",
+          "subject": "sink_1",
+          "object": "potted_plant_7",
+          "conf": 0.779
+        },
+        {
+          "type": "near",
+          "subject": "potted_plant_5",
+          "object": "potted_plant_4",
+          "conf": 0.759
+        },
+        {
+          "type": "next_to",
+          "subject": "potted_plant_5",
+          "object": "potted_plant_4",
+          "conf": 0.82
+        },
+        {
+          "type": "next_to",
+          "subject": "potted_plant_5",
+          "object": "person_2",
+          "conf": 0.783
+        },
+        {
+          "type": "next_to",
+          "subject": "person_2",
+          "object": "potted_plant_5",
+          "conf": 0.783
+        },
+        {
+          "type": "near",
+          "subject": "potted_plant_6",
+          "object": "potted_plant_4",
+          "conf": 0.725
+        },
+        {
+          "type": "next_to",
+          "subject": "potted_plant_6",
+          "object": "potted_plant_4",
+          "conf": 0.791
+        }
+      ],
+      "environment": {
+        "scene_type": "kitchen",
+        "setting": "kitchen",
+        "indoor_outdoor": "indoor",
+        "evidence": [
+          "Kitchen appliance or utensil labels detected.",
+          "Indoor furniture/devices with people detected.",
+          "Indoor furniture or appliance labels present.",
+          "Two people detected.",
+          "56 relationships in scene graph.",
+          "Atmosphere: casual."
+        ]
+      },
+      "caption": "Two people are in a kitchen around a dining table. A white refrigerator, a brown couch, an oven, a sink, and a tv are visible behind them. A beige cup and a brown vase sit on the table, while 4 brown chairs surround it.",
+      "quality_overall": null,
+      "qa_passed": true,
+      "flags": [],
+      "worst": "INFO"
+    },
+    {
+      "name": "moto_alt",
+      "tier": "general",
+      "path": "tmp\\uploads\\166321294_4a5e68535f.jpg",
+      "graph_labels": {
+        "person": 1,
+        "motorcycle": 1
+      },
+      "people_graph": 1,
+      "people_ve": 1,
+      "confirmed_activities": [
+        {
+          "activity": "riding a motorcycle",
+          "entity_ids": [
+            "person_1",
+            "motorcycle_1"
+          ],
+          "person_actors": [
+            "person_1"
+          ],
+          "n_person_actors": 1,
+          "confidence": 0.897
+        }
+      ],
+      "relations": [
+        {
+          "type": "riding",
+          "subject": "person_1",
+          "object": "motorcycle_1",
+          "conf": 0.917
+        }
+      ],
+      "environment": {
+        "scene_type": "outdoor scene",
+        "setting": "outdoor area",
+        "indoor_outdoor": "outdoor",
+        "evidence": [
+          "Vehicle proximity detected in scene graph.",
+          "Outdoor object labels present.",
+          "One person detected.",
+          "3 relationships in scene graph.",
+          "Outdoor scene without rain/snow cues.",
+          "Activities: riding a motorcycle",
+          "Atmosphere: neutral."
+        ]
+      },
+      "caption": "A person is riding a motorcycle on a road. The person is wearing brown clothing.",
+      "quality_overall": null,
+      "qa_passed": true,
+      "flags": [],
+      "worst": "INFO"
+    },
+    {
+      "name": "dense",
+      "tier": "residual",
+      "path": "tmp\\uploads\\random_385406.jpg",
+      "graph_labels": {
+        "person": 12,
+        "tennis racket": 2
+      },
+      "people_graph": 12,
+      "people_ve": 12,
+      "confirmed_activities": [
+        {
+          "activity": "playing with a tennis racket",
+          "entity_ids": [
+            "person_6",
+            "tennis_racket_2"
+          ],
+          "person_actors": [
+            "person_6"
+          ],
+          "n_person_actors": 1,
+          "confidence": 0.9
+        }
+      ],
+      "relations": [
+        {
+          "type": "playing_with",
+          "subject": "person_6",
+          "object": "tennis_racket_2",
+          "conf": 0.95
+        },
+        {
+          "type": "playing_with",
+          "subject": "person_8",
+          "object": "tennis_racket_2",
+          "conf": 0.95
+        },
+        {
+          "type": "next_to",
+          "subject": "person_9",
+          "object": "person_11",
+          "conf": 0.786
+        },
+        {
+          "type": "playing_with",
+          "subject": "person_10",
+          "object": "tennis_racket_1",
+          "conf": 0.95
+        },
+        {
+          "type": "next_to",
+          "subject": "person_11",
+          "object": "person_9",
+          "conf": 0.786
+        },
+        {
+          "type": "near",
+          "subject": "person_11",
+          "object": "person_12",
+          "conf": 0.74
+        },
+        {
+          "type": "next_to",
+          "subject": "person_11",
+          "object": "person_12",
+          "conf": 0.804
+        },
+        {
+          "type": "near",
+          "subject": "person_12",
+          "object": "person_11",
+          "conf": 0.74
+        },
+        {
+          "type": "next_to",
+          "subject": "person_12",
+          "object": "person_11",
+          "conf": 0.804
+        }
+      ],
+      "environment": {
+        "scene_type": "outdoor scene",
+        "setting": "recreational area",
+        "indoor_outdoor": "outdoor",
+        "evidence": [
+          "Outdoor object labels present.",
+          "12 people detected.",
+          "51 relationships in scene graph.",
+          "Outdoor scene without rain/snow cues.",
+          "Activities: playing with a tennis racket",
+          "Atmosphere: competitive."
+        ]
+      },
+      "caption": "Outdoors, a person is playing with a tennis racket, while several other people remain farther back.",
+      "quality_overall": null,
+      "qa_passed": true,
+      "flags": [],
+      "worst": "INFO"
+    },
+    {
+      "name": "outdoor_misc",
+      "tier": "general",
+      "path": "tmp\\uploads\\47870024_73a4481f7d.jpg",
+      "graph_labels": {
+        "person": 2,
+        "skateboard": 1
+      },
+      "people_graph": 2,
+      "people_ve": 2,
+      "confirmed_activities": [],
+      "relations": [],
+      "environment": {
+        "scene_type": "outdoor scene",
+        "setting": "recreational area",
+        "indoor_outdoor": "outdoor",
+        "evidence": [
+          "Outdoor object labels present.",
+          "Two people detected.",
+          "0 relationships in scene graph.",
+          "Outdoor scene without rain/snow cues.",
+          "Atmosphere: casual."
+        ]
+      },
+      "caption": "Two people are visible. The pair are outdoors.",
+      "quality_overall": null,
+      "qa_passed": true,
+      "flags": [],
+      "worst": "INFO"
+    },
+    {
+      "name": "trail",
+      "tier": "general",
+      "path": "tmp\\uploads\\95728660_d47de66544.jpg",
+      "graph_labels": {
+        "person": 1,
+        "bicycle": 1
+      },
+      "people_graph": 1,
+      "people_ve": 1,
+      "confirmed_activities": [
+        {
+          "activity": "riding a bicycle",
+          "entity_ids": [
+            "person_1",
+            "bicycle_1"
+          ],
+          "person_actors": [
+            "person_1"
+          ],
+          "n_person_actors": 1,
+          "confidence": 0.896
+        }
+      ],
+      "relations": [
+        {
+          "type": "riding",
+          "subject": "person_1",
+          "object": "bicycle_1",
+          "conf": 0.916
+        }
+      ],
+      "environment": {
+        "scene_type": "outdoor scene",
+        "setting": "outdoor area",
+        "indoor_outdoor": "outdoor",
+        "evidence": [
+          "Vehicle proximity detected in scene graph.",
+          "Outdoor object labels present.",
+          "One person detected.",
+          "3 relationships in scene graph.",
+          "Outdoor scene without rain/snow cues.",
+          "Activities: riding a bicycle",
+          "Atmosphere: neutral."
+        ]
+      },
+      "caption": "A lone figure in a dark blue coat is the activity of riding a bicycle along a dirt trail.",
+      "quality_overall": null,
+      "qa_passed": true,
+      "flags": [],
+      "worst": "INFO"
+    },
+    {
+      "name": "animal",
+      "tier": "general",
+      "path": "tmp\\uploads\\random_850976.jpg",
+      "graph_labels": {
+        "bear": 4
+      },
+      "people_graph": 0,
+      "people_ve": 0,
+      "confirmed_activities": [],
+      "relations": [],
+      "environment": {
+        "scene_type": "natural environment",
+        "setting": "outdoor area",
+        "indoor_outdoor": "outdoor",
+        "evidence": [
+          "Outdoor object labels present.",
+          "No people detected.",
+          "0 relationships in scene graph.",
+          "Outdoor scene without rain/snow cues.",
+          "Atmosphere: quiet."
+        ]
+      },
+      "caption": "A bear is at the heart of the scene.",
+      "quality_overall": null,
+      "qa_passed": true,
+      "flags": [],
+      "worst": "INFO"
+    }
+  ]
+}

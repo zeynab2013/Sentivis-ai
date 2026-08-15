@@ -1,0 +1,204 @@
+================================================================================
+CASE: 1_kitchen_multi_people
+IMAGE: tmp\coco_kitchen.jpg
+--- CAPTION ---
+In a kitchen, a person wearing black clothing and black pants is near a sink and 2 brown bowls, while another person remains farther back.
+verified_people=2
+confirmed_acts=[]
+Q: How many people are visible?
+A: There are two people.
+Q: What is the person doing?
+A: I can't determine the person's exact activity from the available visual evidence.
+Q: What color clothing is the person wearing?
+A: I can't determine which person's clothing you mean from the available visual evidence.
+Q: What objects are visible?
+A: A person is visible in the image. There is a brown bowl that is small and far away. The bowl is oriented horizontally and facing left.
+suggestions=['How many people are visible in total?', 'What is happening in the background?']
+RESULT: PASS checks={'caption_nonempty': 'PASS', 'people_qa_matches_verified': 'PASS', 'people_caption_qa_consistent': 'PASS', 'confirmed_activity_in_caption': 'N/A', 'activity_qa_uses_confirmed': 'N/A', 'no_weak_inventions': 'PASS', 'suggestions': 'PASS'}
+================================================================================
+CASE: 2_horse_person_fire
+IMAGE: tmp\uploads\10815824_2997e03d76.jpg
+--- CAPTION ---
+Two people are with a brown horse outdoors. A fire is burning nearby. A person is leading a horse. A person is holding a rope.
+verified_people=2
+confirmed_acts=['leading a horse', 'holding a rope']
+Q: How many people are visible?
+A: There are two people.
+Q: What is the person doing?
+A: The first person is leading a horse.
+Q: What color clothing is the person wearing?
+A: The first person is wearing black clothing.
+Q: What objects are visible?
+A: A brown horse is visible and located nearby. There is also a person present in the image. The horse is oriented square and facing left.
+suggestions=['What other animals are visible?', 'What color clothing is the second person wearing?', 'What color clothing is the person wearing?']
+RESULT: PASS checks={'caption_nonempty': 'PASS', 'people_qa_matches_verified': 'PASS', 'people_caption_qa_consistent': 'PASS', 'confirmed_activity_in_caption': 'PASS', 'activity_qa_uses_confirmed': 'PASS', 'no_weak_inventions': 'PASS', 'suggestions': 'PASS'}
+================================================================================
+CASE: 3_football_sports
+IMAGE: tmp\uploads\141139674_246c0f90a1.jpg
+--- CAPTION ---
+A person and a baseball bat are visible outdoors.
+verified_people=1
+confirmed_acts=[]
+Q: How many people are visible?
+A: There is one person.
+Q: What is the person doing?
+A: I can't determine the person's exact activity from the available visual evidence.
+Q: What color clothing is the person wearing?
+A: I can't reliably determine the clothing color from the available visual evidence.
+Q: What objects are visible?
+A: A baseball bat, a person, and a sports ball are visible. The baseball is green and appears to be large and near the person. The baseball is oriented horizontally and facing right.
+suggestions=['What color is the baseball bat?', 'What other details are near the sports ball?']
+RESULT: PASS checks={'caption_nonempty': 'PASS', 'people_qa_matches_verified': 'PASS', 'people_caption_qa_consistent': 'PASS', 'confirmed_activity_in_caption': 'N/A', 'activity_qa_uses_confirmed': 'N/A', 'no_weak_inventions': 'PASS', 'suggestions': 'PASS'}
+================================================================================
+CASE: 4_motorcycle
+IMAGE: tmp\uploads\143552829_72b6ba49d4.jpg
+--- CAPTION ---
+A man is riding a dirt bike. He is wearing a red jacket and orange pants. He has a helmet on his head and goggles on his eyes. The bike has a number on the front of it. Large rocks and grass on the ground next to the water. A person wearing a helmet, gloves and riding a bike on the water.
+verified_people=1
+confirmed_acts=['riding a motorcycle']
+Q: How many people are visible?
+A: There is one person.
+Q: What is the person doing?
+A: The person is riding a motorcycle.
+Q: What color clothing is the person wearing?
+A: The person is wearing a red jacket.
+Q: What objects are visible?
+A: A person is visible in the image. The person is brown and standing near a motorcycle. The person is positioned on the left side of the frame.
+suggestions=['What color is the motorcycle?', 'What other details are near the motorcycle?', 'What vehicle is visible in the scene?']
+RESULT: PASS checks={'caption_nonempty': 'PASS', 'people_qa_matches_verified': 'PASS', 'people_caption_qa_consistent': 'PASS', 'confirmed_activity_in_caption': 'PASS', 'activity_qa_uses_confirmed': 'PASS', 'no_weak_inventions': 'PASS', 'suggestions': 'PASS'}
+================================================================================
+CASE: 5_bicycle_multi_people
+IMAGE: tmp\uploads\191003284_1025b0fb7d.jpg
+--- CAPTION ---
+A person is riding a bicycle. Two people are visible in the scene.
+verified_people=2
+confirmed_acts=['riding a bicycle']
+Q: How many people are visible?
+A: There are two people.
+Q: What is the person doing?
+A: The first person is riding a bicycle.
+Q: What color clothing is the person wearing?
+A: I can't reliably determine the clothing color from the available visual evidence.
+Q: What objects are visible?
+A: A bicycle is visible and it is near. There are two people and a handbag present in the image. The bicycle is large and positioned at the bottom-center of the scene.
+suggestions=['What color is the handbag?', 'What other details are near the handbag?', 'What vehicle is visible in the scene?']
+RESULT: PASS checks={'caption_nonempty': 'PASS', 'people_qa_matches_verified': 'PASS', 'people_caption_qa_consistent': 'PASS', 'confirmed_activity_in_caption': 'PASS', 'activity_qa_uses_confirmed': 'PASS', 'no_weak_inventions': 'PASS', 'suggestions': 'PASS'}
+================================================================================
+CASE: 6_vehicle
+IMAGE: tmp\competition_e2e_street.jpg
+--- CAPTION ---
+A large blue bus is parked in a parking lot.
+verified_people=0
+confirmed_acts=[]
+Q: How many people are visible?
+A: No people are clearly visible.
+Q: What is the person doing?
+A: I can't determine the person's exact activity from the available visual evidence.
+Q: What color clothing is the person wearing?
+A: I can't reliably determine the clothing color from the available visual evidence.
+Q: What objects are visible?
+A: A dark blue bus is visible in the image. The bus appears to be large and close to the viewer, positioned near the center. Its material is reflective and has a clear view of it.
+suggestions=['What readable text appears in the scene?']
+RESULT: PASS checks={'caption_nonempty': 'PASS', 'people_qa_matches_verified': 'PASS', 'people_caption_qa_consistent': 'PASS', 'confirmed_activity_in_caption': 'N/A', 'activity_qa_uses_confirmed': 'N/A', 'no_weak_inventions': 'PASS', 'suggestions': 'PASS'}
+================================================================================
+CASE: 7_landscape
+IMAGE: tmp\uploads\95728660_d47de66544.jpg
+--- CAPTION ---
+Him riding the bicycle on a dirt trail, as indicated by the 90% confidence level associated with this activity.
+verified_people=1
+confirmed_acts=['riding a bicycle']
+Q: How many people are visible?
+A: There is one person.
+Q: What is the person doing?
+A: The person is riding a bicycle.
+Q: What color clothing is the person wearing?
+A: The person is wearing a black coat.
+Q: What objects are visible?
+A: A person is visible in the image. The person is wearing a dark blue outfit and is standing to the left of the frame. A bicycle is also present in the image.
+suggestions=['What color clothing is the person wearing?', 'What vehicle is visible in the scene?']
+RESULT: PASS checks={'caption_nonempty': 'PASS', 'people_qa_matches_verified': 'PASS', 'people_caption_qa_consistent': 'PASS', 'confirmed_activity_in_caption': 'PASS', 'activity_qa_uses_confirmed': 'PASS', 'no_weak_inventions': 'PASS', 'suggestions': 'PASS'}
+================================================================================
+CASE: 8_animal
+IMAGE: tmp\uploads\random_850976.jpg
+--- CAPTION ---
+A beige bear is at the heart of the scene.
+verified_people=0
+confirmed_acts=[]
+Q: How many people are visible?
+A: No people are clearly visible.
+Q: What is the person doing?
+A: I can't determine the person's exact activity from the available visual evidence.
+Q: What color clothing is the person wearing?
+A: I can't reliably determine the clothing color from the available visual evidence.
+Q: What objects are visible?
+A: A beige bear is visible in the image. The bear is large and positioned near the center of the frame. Its segmentation is identified by a bounding box.
+suggestions=['What is visible in the background of the scene?']
+RESULT: PASS checks={'caption_nonempty': 'PASS', 'people_qa_matches_verified': 'PASS', 'people_caption_qa_consistent': 'PASS', 'confirmed_activity_in_caption': 'N/A', 'activity_qa_uses_confirmed': 'N/A', 'no_weak_inventions': 'PASS', 'suggestions': 'PASS'}
+================================================================================
+CASE: 9_dense_indoor
+IMAGE: tmp\uploads\random_385406.jpg
+--- CAPTION ---
+A crowded outdoor outdoors hosts nine people engaged in what is a tennis training session. Several people are holding tennis rackets, with one person wearing a white jersey and black shoes beside a person dressed in a red coat and burgundy pants. A person is playing with a tennis racket.
+verified_people=9
+confirmed_acts=['playing with a tennis racket', 'playing with a tennis racket', 'training', 'holding a tennis racket']
+Q: How many people are visible?
+A: There are nine people.
+Q: What is the person doing?
+A: The first person is training.
+Q: What color clothing is the person wearing?
+A: I can't determine which person's clothing you mean from the available visual evidence.
+Q: What objects are visible?
+A: Multiple people are visible in the image. A tennis racket is also present. The people appear to be large and close to the camera.
+suggestions=['What color is the tennis racket?', 'What is positioned next to the person?', 'What color clothing is the second person wearing?']
+RESULT: PASS checks={'caption_nonempty': 'PASS', 'people_qa_matches_verified': 'PASS', 'people_caption_qa_consistent': 'PASS', 'confirmed_activity_in_caption': 'PASS', 'activity_qa_uses_confirmed': 'PASS', 'no_weak_inventions': 'PASS', 'suggestions': 'PASS'}
+================================================================================
+CASE: 10_low_quality
+IMAGE: tmp\enhance_blur.jpg
+--- CAPTION ---
+An indoor moment unfolds around everyday objects.
+verified_people=0
+confirmed_acts=[]
+Q: How many people are visible?
+A: No people are clearly visible.
+Q: What is the person doing?
+A: I can't determine the person's exact activity from the available visual evidence.
+Q: What color clothing is the person wearing?
+A: I can't reliably determine the clothing color from the available visual evidence.
+Q: What objects are visible?
+A: I can't reliably determine that from the image.
+suggestions=[]
+RESULT: FAIL checks={'caption_nonempty': 'FAIL', 'people_qa_matches_verified': 'PASS', 'people_caption_qa_consistent': 'PASS', 'confirmed_activity_in_caption': 'N/A', 'activity_qa_uses_confirmed': 'N/A', 'no_weak_inventions': 'PASS', 'suggestions': 'FAIL'}
+================================================================================
+CASE: 11_enhanced
+IMAGE: tmp\pipeline_enhanced_500x333.png
+--- CAPTION ---
+One person is leading a brown horse outdoors. To the right of the horse, another individual wearing a beige coat is observing. A second brown horse is in the background, adding to the outdoor setting. A fire is burning nearby. Two people are visible in the scene. A person is holding a rope.
+verified_people=2
+confirmed_acts=['leading a horse', 'holding a rope']
+Q: How many people are visible?
+A: There are two people.
+Q: What is the person doing?
+A: The first person is leading a horse.
+Q: What color clothing is the person wearing?
+A: I can't reliably determine the clothing color from the available visual evidence.
+Q: What objects are visible?
+A: A brown horse is visible in the image. There is also a person present near the horse. The horse is relatively large and positioned close to the viewer.
+suggestions=['What other animals are visible?', 'What color clothing is the second person wearing?', 'What color clothing is the person wearing?']
+RESULT: PASS checks={'caption_nonempty': 'PASS', 'people_qa_matches_verified': 'PASS', 'people_caption_qa_consistent': 'PASS', 'confirmed_activity_in_caption': 'PASS', 'activity_qa_uses_confirmed': 'PASS', 'no_weak_inventions': 'PASS', 'suggestions': 'PASS'}
+================================================================================
+CASE: 12_multi_person_clothing
+IMAGE: tmp\uploads\random_385406.jpg
+--- CAPTION ---
+A crowded outdoor outdoors hosts nine people engaged in what is a tennis training session. Several people are holding tennis rackets, with one person wearing a white jersey and black shoes beside a person dressed in a red coat and burgundy pants. A person is playing with a tennis racket.
+verified_people=9
+confirmed_acts=['playing with a tennis racket', 'playing with a tennis racket', 'training', 'holding a tennis racket']
+Q: How many people are visible?
+A: There are nine people.
+Q: What is the person doing?
+A: The first person is training.
+Q: What color clothing is the person wearing?
+A: I can't determine which person's clothing you mean from the available visual evidence.
+Q: What objects are visible?
+A: Multiple people are visible in the image. A tennis racket is also present. The people appear to be large and close to the camera.
+suggestions=['What color is the tennis racket?', 'What is positioned next to the person?', 'What color clothing is the second person wearing?']
+RESULT: PASS checks={'caption_nonempty': 'PASS', 'people_qa_matches_verified': 'PASS', 'people_caption_qa_consistent': 'PASS', 'confirmed_activity_in_caption': 'PASS', 'activity_qa_uses_confirmed': 'PASS', 'no_weak_inventions': 'PASS', 'suggestions': 'PASS'}

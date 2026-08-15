@@ -1,0 +1,57 @@
+{
+  "image": "random_268119.jpg",
+  "caption": "A person wearing tan clothing is preparing food in a kitchen. A refrigerator, a vase, and 3 chairs are visible nearby. 2 tvs are visible nearby. A dining table sits among the surrounding furnishings.",
+  "robotic_failure": false,
+  "suggestions": [
+    "What is positioned next to the person?"
+  ],
+  "colors": [
+    "0:color=charcoal",
+    "0:dominant_color=charcoal",
+    "1:color=maroon",
+    "1:dominant_color=maroon",
+    "2:color=maroon",
+    "2:dominant_color=maroon",
+    "2:secondary_color=brown",
+    "3:color=brown",
+    "3:dominant_color=brown",
+    "4:color=khaki",
+    "4:dominant_color=khaki",
+    "8:color=tan"
+  ],
+  "relations": [
+    "2-near-3",
+    "2-right_of-3",
+    "2-near-5",
+    "2-right_of-5",
+    "3-near-2",
+    "3-left_of-2",
+    "3-inside-5",
+    "3-near-5",
+    "3-next_to-5",
+    "3-near-6",
+    "3-next_to-6",
+    "3-right_of-6"
+  ],
+  "enhancement": {
+    "level": "MEDIUM",
+    "applied": false,
+    "ops": [],
+    "rejected": true,
+    "reason": "enhanced result was not objectively better"
+  },
+  "tts_bytes": 84672,
+  "ram_mb_before": 259.3,
+  "ram_mb_after": 2053.5,
+  "objects": [
+    "tv",
+    "tv",
+    "chair",
+    "chair",
+    "vase",
+    "dining table",
+    "chair",
+    "refrigerator",
+    "person"
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "fails": 1,
+  "rows": [
+    {
+      "name": "HORSE",
+      "status": "PASS",
+      "words": 55,
+      "caption": "A person with cream-colored clothing is on grass, leading a brown horse that occupies the left side of the scene. A person is holding a rope. A second person, dressed in black pants and brown shoes, is beside the horse on the right. Two people are visible in the scene. A fire is burning nearby.",
+      "answers": {
+        "How many people are visible?": "There are two people.",
+        "What is the person doing?": "The first person is leading a horse.",
+        "What color is the horse?": "The horse appears brown."
+      },
+      "object_coverage": 1.0,
+      "relationship_coverage": 1.0,
+      "activity_coverage": 0.0,
+      "hallucination_risk": 0.0,
+      "confirmed_activities": [
+        "leading a horse",
+        "holding a rope"
+      ]
+    },
+    {
+      "name": "SOCCER",
+      "status": "FAIL",
+      "words": 25,
+      "caption": "At the bottom center, a white sports ball sits undisturbed, completing this casual gathering in an outdoor setting. Three people are visible in the scene.",
+      "answers": {
+        "How many people are visible?": "There are three people.",
+        "What are they doing?": "I can't determine the person's exact activity from the available visual evidence.",
+        "What readable text appears in the scene?": "Readable text in the image includes \"21\"."
+      },
+      "object_coverage": 1.0,
+      "relationship_coverage": null,
+      "activity_coverage": null,
+      "hallucination_risk": 0.0,
+      "confirmed_activities": []
+    },
+    {
+      "name": "MOTORCYCLE",
+      "status": "PASS",
+      "words": 68,
+      "caption": "A man is riding a dirt bike. A person wearing a helmet, gloves and riding a bike on the water. Large rocks and grass on the ground next to the water. A motorcycle are visible behind them. He is wearing a red jacket and orange pants. He has a helmet on his head and goggles on his eyes. The bike has a number on the front of it.",
+      "answers": {
+        "How many people are visible?": "There is one person.",
+        "What is the person doing?": "The person is riding a motorcycle."
+      },
+      "object_coverage": 1.0,
+      "relationship_coverage": 0.3333333333333333,
+      "activity_coverage": null,
+      "hallucination_risk": 1.0,
+      "confirmed_activities": [
+        "riding a motorcycle"
+      ]
+    },
+    {
+      "name": "BICYCLE",
+      "status": "PASS",
+      "words": 30,
+      "caption": "A person is riding a bicycle. Two people are visible in the scene. And a light blue are visible behind them. A bicycle and a handbag are visible behind them.",
+      "answers": {
+        "How many people are visible?": "There are two people.",
+        "What is the person doing?": "The first person is riding a bicycle."
+      },
+      "object_coverage": 1.0,
+      "relationship_coverage": 0.125,
+      "activity_coverage": null,
+      "hallucination_risk": 0.0,
+      "confirmed_activities": [
+        "riding a bicycle"
+      ]
+    },
+    {
+      "name": "DENSE_TENNIS",
+      "status": "OK",
+      "words": 30,
+      "caption": "Outdoors, a person wearing red jacket and black pants is playing with a tennis racket, while several other people remain farther back. A person is training. Holding a tennis racket.",
+      "verified_labels": [
+        "person",
+        "tennis racket"
+      ],
+      "setting": "recreational area",
+      "object_coverage": 1.0,
+      "relationship_coverage": 0.6363636363636364
+    },
+    {
+      "name": "KITCHEN",
+      "status": "OK",
+      "words": 25,
+      "caption": "In a kitchen, a person wearing black clothing and black pants is near a sink and 2 brown bowls, while another person remains farther back.",
+      "verified_labels": [
+        "bowl",
+        "person",
+        "sink"
+      ],
+      "setting": "kitchen",
+      "object_coverage": 1.0,
+      "relationship_coverage": null
+    }
+  ]
+}

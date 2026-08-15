@@ -1,0 +1,98 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sentivis-ai"
+version = "1.0.0"
+description = "Sentivis AI — Visual Understanding Platform"
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+license = { text = "Proprietary" }
+authors = [{ name = "Sentivis AI Team" }]
+dependencies = [
+    "PySide6>=6.6.0",
+    "torch>=2.1.0,<2.3.0",
+    "torchvision>=0.16.0,<0.18.0",
+    "ultralytics>=8.1.0",
+    "transformers>=4.38.0,<5.0.0",
+    "accelerate>=0.27.0",
+    "bitsandbytes>=0.42.0; platform_system=='Windows'",
+    "Pillow>=10.2.0",
+    "psutil>=5.9.0",
+    "reportlab>=4.1.0",
+    "numpy>=1.26.0,<2.0.0",
+    "huggingface_hub>=0.21.0,<1.0.0",
+    "tomli>=2.0.0",
+    "easyocr>=1.7.0",
+    "opencv-python-headless>=4.5.0,<4.11.0",
+    "streamlit>=1.28.0",
+    "streamlit-extras>=0.4.0",
+    "streamlit-option-menu>=0.3.6",
+    "plotly>=5.18.0",
+    "streamlit-aggrid>=0.3.4",
+    "streamlit-image-comparison>=0.0.4",
+    "streamlit-lottie>=0.0.5",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-cov>=4.1.0",
+    "ruff>=0.3.0",
+    "mypy>=1.8.0",
+    "types-Pillow",
+]
+
+[project.scripts]
+sentivis-ai = "app.main:main"
+sentivis-desktop = "app.desktop_main:main"
+sentivis-streamlit = "app.main:main"
+sentivis-build = "release.__main__:main"
+sentivis-certify = "certification.__main__:main"
+sentivis-acceptance = "acceptance.__main__:main"
+sentivis-models = "model_management.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app*", "core*", "vision*", "language*", "analysis*", "services*", "ui*", "streamlit_app*", "release*", "certification*", "acceptance*", "model_management*"]
+
+[tool.setuptools.package-data]
+release = ["resources/**/*"]
+core = ["resources/translations/*.json"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "UP", "B", "SIM", "SLF"]
+
+[tool.ruff.lint.per-file-ignores]
+"ui/widgets/image_viewer.py" = ["N802"]
+"ui/app_window.py" = ["N802"]
+"ui/components/notification.py" = ["N802"]
+"scripts/**/*.py" = ["E402", "E501", "SLF001"]
+"streamlit_app/main.py" = ["SLF001", "E402"]
+[tool.mypy]
+python_version = "3.10"
+strict = true
+packages = ["app", "core", "vision", "language", "analysis", "services", "ui", "streamlit_app", "release", "certification", "acceptance", "model_management"]
+ignore_missing_imports = true
+exclude = ["dist"]
+
+[[tool.mypy.overrides]]
+module = ["tests.*"]
+disallow_untyped_defs = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+markers = [
+    "acceptance: end-to-end acceptance tests",
+    "e2e: full workflow tests",
+    "ui: desktop UI interaction tests",
+    "stress: resilience and edge-case tests",
+    "performance: timing and resource tests",
+    "real_models: requires installed production models",
+]

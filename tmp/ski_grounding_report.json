@@ -1,0 +1,24 @@
+{
+  "image": "D:\\comptitions\\America competition(innoverse) 2026\\SENTIVIS AI\\tmp\\competition_e2e_ski.jpg",
+  "caption": "A person wearing a navy jacket is driving on a city street. Nearby, a brown car, light blue car, and car. Trees line the edge of the street. A nearby sign reads \"0.58 mi\".",
+  "labels": [
+    "car",
+    "car",
+    "car",
+    "car",
+    "car",
+    "car",
+    "person",
+    "car"
+  ],
+  "suggestions": [],
+  "question": "What objects are visible near the main subject?",
+  "answer": "There are multiple cars near the main subject (car). Additionally, there is a person standing nearby.",
+  "unknown": "The person's exact age cannot be determined from the visual evidence.",
+  "vlm": 1,
+  "assistant_vlm": 0,
+  "assistant_llm": 1,
+  "analyze_seconds": 50.5,
+  "no_skis_is": true,
+  "no_moment_filler": true
+}

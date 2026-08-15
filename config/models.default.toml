@@ -1,0 +1,58 @@
+[yolo]
+variant = "yolo11x"
+weights_path = ""
+# Competition quality: slightly more recall; NMS still controlled by IOU.
+confidence_threshold = 0.28
+iou_threshold = 0.45
+preferred_device = "cuda"
+
+[blip]
+model_id = "Salesforce/blip-image-captioning-large"
+preferred_device = "cuda"
+max_length = 120
+
+[florence]
+# Florence-2 Base FT fits 2GB VRAM; Large is only used when more memory is available.
+model_id = "microsoft/Florence-2-base-ft"
+preferred_device = "cuda"
+max_new_tokens = 256
+fallback_to_blip = true
+
+[vlm]
+auto_select = true
+# Perception: Florence-2 Base FT (local HF). Gemma 3 4B remains for text semantic synthesis + caption translation.
+# Multimodal Gemma describe was PARTIAL-redundant with YOLO/attrs/graph and dominated total latency.
+# Failover never uses gemma3:1b / Qwen / InternVL.
+preferred_adapter = "florence_base"
+gemma_vision = "gemma3:4b"
+florence_base = "microsoft/Florence-2-base-ft"
+florence_plain = "microsoft/Florence-2-base"
+florence_large = "microsoft/Florence-2-large-ft"
+moondream = "vikhyatk/moondream2"
+blip2 = "Salesforce/blip2-opt-2.7b"
+blip = "Salesforce/blip-image-captioning-large"
+qwen = "Qwen/Qwen2.5-VL-3B-Instruct"
+internvl = "OpenGVLab/InternVL2-8B"
+# Soft thresholds — OOM automatically continues on CPU.
+min_vram_gemma_vision_gb = 0.0
+min_vram_florence_base_gb = 1.5
+min_vram_florence_plain_gb = 1.5
+min_vram_moondream_gb = 1.7
+min_vram_blip2_gb = 3.5
+min_vram_florence_large_gb = 3.5
+min_vram_qwen_gb = 6.0
+min_vram_internvl_gb = 12.0
+
+[gemma]
+# 2B INT4 fits 2GB VRAM; 9B would force constant CPU fallback / crash risk.
+model_id = "google/gemma-2-2b-it"
+preferred_device = "cuda"
+quantization = "int4"
+max_new_tokens = 256
+temperature = 0.3
+provider = "huggingface"
+
+[plugins]
+detection = "vision.yolo_v8n"
+vision_language = "language.florence2"
+reasoning = "language.gemma_2b"

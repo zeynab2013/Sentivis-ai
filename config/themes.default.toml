@@ -1,0 +1,8 @@
+[theme]
+name = "Sentivis Dark"
+# Styles are generated at runtime from design tokens via ui/themes/theme_engine.py
+stylesheet_path = ""
+font_family = "Segoe UI"
+font_size = 10
+accent_color = "#FF3FA4"
+background_color = "#130A24"

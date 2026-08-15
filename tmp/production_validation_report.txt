@@ -1,0 +1,220 @@
+================================================================================
+CASE: 1_kitchen
+IMAGE: tmp\uploads\5e4dc9b3-589c-43c6-84b0-5620936c9df4.png
+EXISTS: True
+--- FINAL CAPTION ---
+Two people are in a kitchen around a dining table. A cup and a vase sit on the table, while 2 brown chairs surround it. A refrigerator, a couch, a sink, and a tv are visible behind them.
+--- VERIFIED SCENE ---
+scene_type='kitchen' setting='kitchen' indoor_outdoor='indoor' conf=0.70
+--- VERIFIED ACTIVITIES (all) ---
+(none)
+--- QA-SAFE ACTIVITIES ONLY ---
+(none)
+--- SUGGESTED QUESTIONS ---
+  - What color is the potted plant?
+  - What other details are near the clock?
+  - What is positioned next to the person?
+  - What color clothing is the second person wearing?
+  - What color clothing is the person wearing?
+--- QA ANSWERS ---
+Q: How many people are visible?
+A: There are two people.
+---
+Q: What is the person doing?
+A: I can't determine the person's exact activity from the available visual evidence.
+---
+Q: What objects are visible?
+A: A person is visible in the image. Several objects are present, including a chair, refrigerator, dining table, cup, vase, clock, couch, and potted plant. The scene appears to be a kitchen with multiple chairs around a dining table.
+---
+Q: What colors are visible?
+A: The colors visible include beige and olive from the potted plants. The chairs are brown, and the person’s hair and clothing are also brown. Brown is the dominant color in the scene.
+---
+Q: Where is the main object/person?
+A: The person is in the middle left of the scene.
+---
+--- QUICK FLAGS ---
+people_entities=['person_1', 'person_2']
+object_labels=['chair', 'clock', 'couch', 'cup', 'dining table', 'person', 'potted plant', 'refrigerator', 'sink', 'tv', 'vase']
+qa_safe_activities_absent_from_caption=[]
+
+================================================================================
+CASE: 2_animal
+IMAGE: tmp\uploads\random_850976.jpg
+EXISTS: True
+--- FINAL CAPTION ---
+A bear stands at the heart of the scene.
+--- VERIFIED SCENE ---
+scene_type='unknown' setting='unknown' indoor_outdoor='unknown' conf=0.40
+--- VERIFIED ACTIVITIES (all) ---
+(none)
+--- QA-SAFE ACTIVITIES ONLY ---
+(none)
+--- SUGGESTED QUESTIONS ---
+  - What color is the bear?
+--- QA ANSWERS ---
+Q: How many people are visible?
+A: No people are clearly visible.
+---
+Q: What is the person doing?
+A: I can't determine the person's exact activity from the available visual evidence.
+---
+Q: What objects are visible?
+A: A large bear is visible in the image. The bear is positioned near the center of the scene and has a clear view. Its material appears to be reflective with detailed texture.
+---
+Q: What colors are visible?
+A: The bear has brown and tan colors. The bear’s dominant color is tan. The bear also exhibits a secondary brown color.
+---
+Q: Where is the main object/person?
+A: The main object is a bear. The bear is located at the heart of the scene. There are no other objects detected in the image.
+---
+--- QUICK FLAGS ---
+people_entities=[]
+object_labels=['bear']
+qa_safe_activities_absent_from_caption=[]
+
+================================================================================
+CASE: 3_vehicle
+IMAGE: tmp\competition_e2e_street.jpg
+EXISTS: True
+--- FINAL CAPTION ---
+A large, navy blue bus parked along a highway.
+--- VERIFIED SCENE ---
+scene_type='highway' setting='highway' indoor_outdoor='outdoor' conf=0.70
+--- VERIFIED ACTIVITIES (all) ---
+(none)
+--- QA-SAFE ACTIVITIES ONLY ---
+(none)
+--- SUGGESTED QUESTIONS ---
+  - What readable text appears in the scene?
+--- QA ANSWERS ---
+Q: How many people are visible?
+A: No people are clearly visible.
+---
+Q: What is the person doing?
+A: I can't determine the person's exact activity from the available visual evidence.
+---
+Q: What objects are visible?
+A: A large bus is visible in the image. The bus is positioned near the center of the frame and appears to be facing forward. It has a textured, smooth surface with a dark brightness.
+---
+Q: What colors are visible?
+A: The dominant color visible is navy. A large, navy blue bus is detected in the image. The bus is parked near the highway.
+---
+Q: Where is the main object/person?
+A: The main object is a bus. It is located on a highway outdoors under clear weather conditions. The scene appears to be empty and quiet.
+---
+--- QUICK FLAGS ---
+people_entities=[]
+object_labels=['bus']
+qa_safe_activities_absent_from_caption=[]
+
+================================================================================
+CASE: 4_sports
+IMAGE: tmp\uploads\random_240850.jpg
+EXISTS: True
+--- FINAL CAPTION ---
+Two men are running on a baseball field. The person is wearing light blue clothing, cream pants, and sneakers. A baseball glove share the frame with them.
+--- VERIFIED SCENE ---
+scene_type='unknown' setting='unknown' indoor_outdoor='unknown' conf=0.40
+--- VERIFIED ACTIVITIES (all) ---
+(none)
+--- QA-SAFE ACTIVITIES ONLY ---
+(none)
+--- SUGGESTED QUESTIONS ---
+--- QA ANSWERS ---
+Q: How many people are visible?
+A: There is one person.
+---
+Q: What is the person doing?
+A: I can't determine the person's exact activity from the available visual evidence.
+---
+Q: What objects are visible?
+A: A person is visible in the image. The person is wearing light blue clothing and cream pants. A baseball glove is also present in the scene.
+---
+Q: What colors are visible?
+A: The visible colors include light blue, cream, and dark green. The person is wearing light blue clothing and has cream pants. They are also wearing sneakers with a dark green secondary color.
+---
+Q: Where is the main object/person?
+A: The person is in the middle center of the scene.
+---
+--- QUICK FLAGS ---
+people_entities=['person_1', 'person_2']
+object_labels=['baseball glove', 'person']
+qa_safe_activities_absent_from_caption=[]
+
+================================================================================
+CASE: 5_landscape
+IMAGE: tmp\uploads\95728660_d47de66544.jpg
+EXISTS: True
+--- FINAL CAPTION ---
+Person, and bicycle. The location is outdoor. Observed activity: driving.
+--- VERIFIED SCENE ---
+scene_type='road' setting='roadside' indoor_outdoor='outdoor' conf=0.70
+--- VERIFIED ACTIVITIES (all) ---
+  activity='riding a bicycle' conf=0.90 qa_safe=True narrative_safe=True status=OBSERVED support=('riding',) entities=('person_1', 'bicycle_1')
+--- QA-SAFE ACTIVITIES ONLY ---
+  'riding a bicycle' conf=0.90
+--- SUGGESTED QUESTIONS ---
+  - What color clothing is the person wearing?
+--- QA ANSWERS ---
+Q: How many people are visible?
+A: There is one person.
+---
+Q: What is the person doing?
+A: The person is riding a bicycle.
+---
+Q: What objects are visible?
+A: A person and a bicycle are visible in the image. The person is standing and facing left with clear occlusion. They appear to be of large size and at medium distance from the viewer.
+---
+Q: What colors are visible?
+A: Dark green is a visible color. The person is wearing a dark green jacket and shoes. Dark green clothing dominates the scene.
+---
+Q: Where is the main object/person?
+A: The person is riding the bicycle.
+---
+--- QUICK FLAGS ---
+people_entities=['person_1']
+object_labels=['bicycle', 'person']
+qa_safe_activities_absent_from_caption=['riding a bicycle']
+
+================================================================================
+CASE: 6_multiple_people
+IMAGE: tmp\uploads\random_385406.jpg
+EXISTS: True
+--- FINAL CAPTION ---
+Person, person, person, person, tennis racket, and person. The location is outdoor. Observed activity: playing tennis.
+--- VERIFIED SCENE ---
+scene_type='tennis court' setting='tennis court' indoor_outdoor='outdoor' conf=0.70
+--- VERIFIED ACTIVITIES (all) ---
+  activity='playing tennis' conf=0.88 qa_safe=True narrative_safe=True status=OBSERVED support=('playing_with',) entities=('person_4', 'tennis_racket_2')
+  activity='playing tennis' conf=0.90 qa_safe=True narrative_safe=True status=OBSERVED support=('playing_with',) entities=('person_6', 'tennis_racket_2')
+  activity='playing tennis' conf=0.89 qa_safe=True narrative_safe=True status=OBSERVED support=('playing_with',) entities=('person_8', 'tennis_racket_1')
+--- QA-SAFE ACTIVITIES ONLY ---
+  'playing tennis' conf=0.88
+  'playing tennis' conf=0.90
+  'playing tennis' conf=0.89
+--- SUGGESTED QUESTIONS ---
+  - What is the person holding?
+  - What color is the tennis racket?
+  - How many people are visible in total?
+  - What is positioned next to the person?
+  - What color clothing is the second person wearing?
+--- QA ANSWERS ---
+Q: How many people are visible?
+A: There are nine people.
+---
+Q: What is the person doing?
+A: The first person appears to be playing tennis.
+---
+Q: What objects are visible?
+A: Multiple people are visible in the image. A tennis racket is also present. The individuals appear to be near each other and of large size.
+---
+Q: What colors are visible?
+A: Cream is a visible color. The people are wearing cream shirts.
+---
+Q: Where is the main object/person?
+A: The person is next to the person.
+---
+--- QUICK FLAGS ---
+people_entities=['person_1', 'person_2', 'person_3', 'person_4', 'person_5', 'person_6', 'person_7', 'person_8', 'person_9', 'person_10', 'person_11']
+object_labels=['person', 'tennis racket']
+qa_safe_activities_absent_from_caption=[]

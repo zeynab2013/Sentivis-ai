@@ -1,0 +1,9 @@
+{
+  "enable_enhancement": true,
+  "enable_super_resolution": true,
+  "enable_sam2": true,
+  "comparison_mode": false,
+  "high_contrast": false,
+  "competition_mode": true,
+  "language": "en"
+}

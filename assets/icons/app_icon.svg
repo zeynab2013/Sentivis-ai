@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Sentivis AI">
+  <rect width="128" height="128" rx="24" fill="#0B1F33"/>
+  <circle cx="64" cy="64" r="34" fill="none" stroke="#4FC3F7" stroke-width="8"/>
+  <circle cx="64" cy="64" r="12" fill="#81C784"/>
+  <path d="M64 18 L74 44 L64 38 L54 44 Z" fill="#FFD54F"/>
+</svg>

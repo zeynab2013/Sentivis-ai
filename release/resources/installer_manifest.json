@@ -1,0 +1,31 @@
+{
+  "product": "Sentivis AI",
+  "application_version": "1.0.0",
+  "architecture_version": "2.3",
+  "ai_pipeline_version": "1.0.0",
+  "model_registry_version": "1.0.0",
+  "configuration_version": "1.0.0",
+  "platform_target": "windows",
+  "minimum_os": "Windows 11",
+  "minimum_python": "3.10.11",
+  "entry_point": "sentivis-ai",
+  "installer_type": "manifest-only",
+  "assets": {
+    "icon": "assets/icons/app_icon.svg",
+    "license": "release/resources/LICENSE",
+    "third_party_notices": "release/resources/THIRD_PARTY_NOTICES.md",
+    "default_config": "release/resources/default_config",
+    "samples": "assets/samples",
+    "export_templates": "assets/export_templates"
+  },
+  "documentation": [
+    "docs/INSTALLATION_GUIDE.md",
+    "docs/QUICK_START_GUIDE.md",
+    "docs/USER_MANUAL.md",
+    "docs/TROUBLESHOOTING_GUIDE.md",
+    "docs/RELEASE_NOTES.md",
+    "docs/SYSTEM_REQUIREMENTS.md",
+    "docs/KNOWN_LIMITATIONS.md",
+    "docs/DIRECTORY_STRUCTURE.md"
+  ]
+}

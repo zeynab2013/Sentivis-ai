@@ -1,0 +1,22 @@
+{
+  "input": "500x333",
+  "output": "1000x666",
+  "quality_level": "LOW",
+  "enhancement_applied": true,
+  "super_resolution_used": true,
+  "sr_model": "realesr-general-x4v3",
+  "sr_scale": 2,
+  "sr_device": "cpu",
+  "before_quality": 0.8178,
+  "after_quality": 0.8174,
+  "improvement_percent": 12.58,
+  "operations": [
+    "clarity_polish",
+    "super_resolution:realesrgan:realesr-general-x4v3"
+  ],
+  "rejection_reason": "",
+  "laplacian_sr": 1714.24,
+  "laplacian_baseline": 309.57,
+  "shapes_differ": true,
+  "pixel_diff_mean": -1.0
+}

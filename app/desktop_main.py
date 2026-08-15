@@ -1,0 +1,6 @@
+"""Legacy PySide6 desktop entry point."""
+
+from app.bootstrap import main
+
+if __name__ == "__main__":
+    main()

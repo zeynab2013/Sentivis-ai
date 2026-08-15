@@ -1,0 +1,372 @@
+================================================================================
+CASE: indoor_kitchen
+IMAGE: tmp\coco_kitchen.jpg
+--- CAPTION ---
+A brown bowl sits at the bottom-left of the image, while a sink is located to the right of the standing person.
+--- SUMMARY ---
+Verified Scene Summary
+Objects: 2 bowls, 2 persons, sink
+Relations: none verified
+Environment: indoor, kitchen
+--- RELATIONS ---
+--- ACTIVITIES ---
+--- REPORT ---
+Verified Scene Summary
+Objects: 2 bowls, 2 persons, sink
+Relations: none verified
+Environment: indoor, kitchen
+No verified relationships
+No verified activities
+--- SUGGESTIONS ---
+  - How many people are visible in total?
+  - What color clothing is the person wearing?
+  - What kind of indoor space is shown?
+--- QA ---
+Q: How many people are visible?
+A: There are two people.
+Q: What is the person doing?
+A: I can't determine the person's exact activity from the available visual evidence.
+Q: What objects are visible?
+A: A bowl and a person are visible in the image. The bowl is small and located at the bottom-left of the frame. The person is standing to the right of the bowl.
+================================================================================
+CASE: outdoor_bike_handbag
+IMAGE: tmp\uploads\191003284_1025b0fb7d.jpg
+--- CAPTION ---
+They are dressed in light blue pants. Another person stands farther back in the scene.
+--- SUMMARY ---
+Verified Scene Summary
+Objects: 2 persons, bicycle, handbag
+Relations: person_1(person) riding bicycle_1(bicycle)
+Environment: outdoor
+--- RELATIONS ---
+  person_1 riding bicycle_1
+--- ACTIVITIES ---
+  [CONFIRMED] 'riding a bicycle' qa=True narr=True
+--- REPORT ---
+Verified Scene Summary
+Objects: 2 persons, bicycle, handbag
+Relations: person_1(person) riding bicycle_1(bicycle)
+Environment: outdoor
+- person 1 riding bicycle (confidence: 88%)
+CONFIRMED:
+- riding a bicycle [person_1, bicycle_1] (confidence: 88%)
+--- SUGGESTIONS ---
+  - What is the person doing in this scene?
+  - How many people are visible in total?
+  - What other details are near the bicycle?
+  - What is happening in the background?
+  - What vehicle is visible in the scene?
+--- QA ---
+Q: How many people are visible?
+A: There are two people.
+Q: What is the person doing?
+A: The first person is riding a bicycle.
+Q: What objects are visible?
+A: A bicycle is visible and it is near. There are two people present in the image, one closer and one farther back. A handbag is also detected in the scene.
+================================================================================
+CASE: vehicle_bus
+IMAGE: tmp\competition_e2e_street.jpg
+--- CAPTION ---
+A large, navy blue bus is parked in an outdoor urban area, surrounded by an empty street. The scene presents a typical urban setting with a bus occupying a parking lot.
+--- SUMMARY ---
+Verified Scene Summary
+Objects: bus
+Relations: none verified
+Environment: outdoor
+--- RELATIONS ---
+--- ACTIVITIES ---
+--- REPORT ---
+Verified Scene Summary
+Objects: bus
+Relations: none verified
+Environment: outdoor
+No verified relationships
+No verified activities
+--- SUGGESTIONS ---
+  - What readable text appears in the scene?
+  - What is visible in the background of the scene?
+--- QA ---
+Q: How many people are visible?
+A: No people are clearly visible.
+Q: What is the person doing?
+A: I can't determine the person's exact activity from the available visual evidence.
+Q: What objects are visible?
+A: A large, navy blue bus is visible. The bus is positioned near the center of an outdoor urban area. It appears to be a reflective and smooth object with a dark brightness.
+================================================================================
+CASE: sports_baseball
+IMAGE: tmp\coco_baseball.jpg
+--- CAPTION ---
+A person wearing a jersey stands in outdoors beside skis, with skis visible beneath them.
+--- SUMMARY ---
+Verified Scene Summary
+Objects: person, skis
+Relations: none verified
+Environment: outdoor, recreational area
+--- RELATIONS ---
+--- ACTIVITIES ---
+--- REPORT ---
+Verified Scene Summary
+Objects: person, skis
+Relations: none verified
+Environment: outdoor, recreational area
+No verified relationships
+No verified activities
+--- SUGGESTIONS ---
+  - What color clothing is the person wearing?
+--- QA ---
+Q: How many people are visible?
+A: There is one person.
+Q: What is the person doing?
+A: I can't determine the person's exact activity from the available visual evidence.
+Q: What objects are visible?
+A: A person is present in the image. The person is standing near skis that are positioned beneath them. The person’s appearance includes reflective material and a moderate texture.
+================================================================================
+CASE: sports_ski
+IMAGE: tmp\competition_e2e_ski.jpg
+--- CAPTION ---
+A person wearing a hoodie stands on a park path beside a bench, with 6 cars nearby.
+--- SUMMARY ---
+Verified Scene Summary
+Objects: 6 cars, bench, person
+Relations: none verified
+Environment: outdoor, park
+--- RELATIONS ---
+--- ACTIVITIES ---
+--- REPORT ---
+Verified Scene Summary
+Objects: 6 cars, bench, person
+Relations: none verified
+Environment: outdoor, park
+- car near bench (confidence: 85%)
+- car next to bench (confidence: 90%)
+- car near vehicle bench (confidence: 75%)
+- car near car (confidence: 74%)
+- car next to car (confidence: 80%)
+- car parked beside car (confidence: 74%)
+- car near car (confidence: 76%)
+- car next to car (confidence: 82%)
+- car parked beside car (confidence: 75%)
+- car inside car (confidence: 74%)
+- car near car (confidence: 79%)
+- car next to car (confidence: 85%)
+- car parked beside car (confidence: 77%)
+- car near vehicle car (confidence: 72%)
+- car near car (confidence: 76%)
+- car next to car (confidence: 82%)
+- car parked beside car (confidence: 75%)
+- car near car (confidence: 76%)
+- car next to car (confidence: 82%)
+- car parked beside car (confidence: 75%)
+- car next to car (confidence: 78%)
+- car parked beside car (confidence: 73%)
+- car near car (confidence: 74%)
+- car next to car (confidence: 80%)
+- car parked beside car (confidence: 74%)
+- car near person 1 (confidence: 72%)
+- car next to person 1 (confidence: 79%)
+- car near car (confidence: 76%)
+- car next to car (confidence: 82%)
+- car parked beside car (confidence: 75%)
+- person 1 near car (confidence: 72%)
+- person 1 next to car (confidence: 79%)
+- bench near car (confidence: 85%)
+- bench next to car (confidence: 90%)
+- bench near vehicle car (confidence: 75%)
+- car near car (confidence: 79%)
+- car next to car (confidence: 85%)
+- car parked beside car (confidence: 77%)
+- car near vehicle car (confidence: 72%)
+- car next to car (confidence: 78%)
+- car parked beside car (confidence: 73%)
+No verified activities
+--- SUGGESTIONS ---
+  - What readable text appears in the scene?
+  - What color is the car?
+  - What is positioned next to the person?
+  - What color clothing is the person wearing?
+--- QA ---
+Q: How many people are visible?
+A: There is one person.
+Q: What is the person doing?
+A: I can't determine the person's exact activity from the available visual evidence.
+Q: What objects are visible?
+A: There is a car and a person visible in the image. The cars are large and near to the person. All of the cars are oriented horizontally and facing towards the center.
+================================================================================
+CASE: multi_people
+IMAGE: tmp\uploads\random_385406.jpg
+--- CAPTION ---
+In a tennis court, a person wearing red jacket is playing with a tennis racket, while several other people remain farther back.
+--- SUMMARY ---
+Verified Scene Summary
+Objects: 11 persons, 2 tennis rackets
+Relations: person_4(person) playing with tennis_racket_2(tennis racket); person_6(person) playing with tennis_racket_2(tennis racket); person_8(person) playing with tennis_racket_1(tennis racket)
+Environment: outdoor, tennis court
+--- RELATIONS ---
+  person_4 playing_with tennis_racket_2
+  person_6 playing_with tennis_racket_2
+  person_8 playing_with tennis_racket_1
+--- ACTIVITIES ---
+  [CONFIRMED] 'playing with a tennis racket' qa=True narr=False
+--- REPORT ---
+Verified Scene Summary
+Objects: 11 persons, 2 tennis rackets
+Relations: person_4(person) playing with tennis_racket_2(tennis racket); person_6(person) playing with tennis_racket_2(tennis racket); person_8(person) playing with tennis_racket_1(tennis racket)
+Environment: outdoor, tennis court
+- person 3 next to person 7 (confidence: 78%)
+- person 4 playing with tennis racket (confidence: 86%)
+- person 6 playing with tennis racket (confidence: 95%)
+- person 7 next to person 3 (confidence: 78%)
+- person 8 playing with tennis racket (confidence: 95%)
+- person 9 near person 10 (confidence: 72%)
+- person 9 next to person 10 (confidence: 79%)
+- person 9 next to person 11 (confidence: 78%)
+- person 10 near person 9 (confidence: 72%)
+- person 10 next to person 9 (confidence: 79%)
+- person 10 near person 11 (confidence: 77%)
+- person 10 next to person 11 (confidence: 83%)
+- person 11 next to person 9 (confidence: 78%)
+- person 11 near person 10 (confidence: 77%)
+- person 11 next to person 10 (confidence: 83%)
+CONFIRMED:
+- playing with a tennis racket [person_4, tennis_racket_2] (confidence: 86%)
+--- SUGGESTIONS ---
+  - What color is the tennis racket?
+  - How many people are visible in total?
+  - What is positioned next to the person?
+  - What color clothing is the second person wearing?
+  - What color clothing is the person wearing?
+--- QA ---
+Q: How many people are visible?
+A: There are nine people.
+Q: What is the person doing?
+A: The first person appears to be playing with a tennis racket.
+Q: What objects are visible?
+A: Multiple people are visible in the image. One person is close by and appears large, holding a tennis racket. Several other people are farther back on the tennis court.
+FAIL tennis court overclaim
+================================================================================
+CASE: animal_bear
+IMAGE: tmp\uploads\random_850976.jpg
+--- CAPTION ---
+A tan bear sits prominently in an outdoor setting, occupying the center of a grassy area.
+--- SUMMARY ---
+Verified Scene Summary
+Objects: bear
+Relations: none verified
+Environment: outdoor
+--- RELATIONS ---
+--- ACTIVITIES ---
+--- REPORT ---
+Verified Scene Summary
+Objects: bear
+Relations: none verified
+Environment: outdoor
+No verified relationships
+No verified activities
+--- SUGGESTIONS ---
+  - What is visible in the background of the scene?
+--- QA ---
+Q: How many people are visible?
+A: No people are clearly visible.
+Q: What is the person doing?
+A: I can't determine the person's exact activity from the available visual evidence.
+Q: What objects are visible?
+A: A large bear is visible in the image. The bear is positioned near the center and occupies a significant amount of space. Its material appears to be reflective with detailed texture.
+================================================================================
+CASE: landscape
+IMAGE: tmp\uploads\95728660_d47de66544.jpg
+--- CAPTION ---
+This single person is the only individual present within this outdoor setting.
+--- SUMMARY ---
+Verified Scene Summary
+Objects: bicycle, person
+Relations: person_1(person) riding bicycle_1(bicycle)
+Environment: outdoor
+--- RELATIONS ---
+  person_1 riding bicycle_1
+--- ACTIVITIES ---
+  [CONFIRMED] 'riding a bicycle' qa=True narr=True
+--- REPORT ---
+Verified Scene Summary
+Objects: bicycle, person
+Relations: person_1(person) riding bicycle_1(bicycle)
+Environment: outdoor
+- person 1 riding bicycle (confidence: 93%)
+CONFIRMED:
+- riding a bicycle [person_1, bicycle_1] (confidence: 90%)
+--- SUGGESTIONS ---
+  - What is the person doing in this scene?
+  - What color is the bicycle?
+  - What other details are near the bicycle?
+  - What color clothing is the person wearing?
+  - What vehicle is visible in the scene?
+--- QA ---
+Q: How many people are visible?
+A: There is one person.
+Q: What is the person doing?
+A: The person is riding a bicycle.
+Q: What objects are visible?
+A: A person is visible in the image. The person is wearing a navy blue outfit and is standing with their back to the viewer. A bicycle is also present in the scene.
+================================================================================
+CASE: low_quality_blur
+IMAGE: tmp\enhance_blur.jpg
+--- CAPTION ---
+An indoor moment unfolds around everyday objects.
+--- SUMMARY ---
+Verified Scene Summary
+Objects: none verified
+Relations: none verified
+Environment: unknown
+--- RELATIONS ---
+--- ACTIVITIES ---
+--- REPORT ---
+Verified Scene Summary
+Objects: none verified
+Relations: none verified
+Environment: unknown
+No verified relationships
+No verified activities
+--- SUGGESTIONS ---
+--- QA ---
+Q: How many people are visible?
+A: No people are clearly visible.
+Q: What is the person doing?
+A: I can't determine the person's exact activity from the available visual evidence.
+Q: What objects are visible?
+A: I can't reliably determine that from the image.
+================================================================================
+CASE: enhanced_preview
+IMAGE: tmp\pipeline_enhanced_500x333.png
+--- CAPTION ---
+To his right, another brown horse rests in the background, and a small fire burns nearby. An outdoors with two people engaged in the activity of leading a horse, creating a natural and relaxed moment within this setting.
+--- SUMMARY ---
+Verified Scene Summary
+Objects: 2 horses, 2 persons
+Relations: person_1(person) leading horse_2(horse)
+Environment: outdoor
+--- RELATIONS ---
+  person_1 leading horse_2
+--- ACTIVITIES ---
+  [CONFIRMED] 'leading a horse' qa=True narr=True
+--- REPORT ---
+Verified Scene Summary
+Objects: 2 horses, 2 persons
+Relations: person_1(person) leading horse_2(horse)
+Environment: outdoor
+- person 1 leading horse (confidence: 81%)
+CONFIRMED:
+- leading a horse [person_1, horse_2] (confidence: 90%)
+--- SUGGESTIONS ---
+  - What other animals are visible?
+  - What color is the other horse?
+  - What color clothing is the second person wearing?
+  - What color clothing is the person wearing?
+--- QA ---
+Q: How many people are visible?
+A: There are two people.
+Q: What is the person doing?
+A: The first person is leading a horse.
+Q: What objects are visible?
+A: A horse is visible, and it appears to be large and near. There is also a person present in the image. The horse is positioned on the left side of the scene.
+================================================================================
+FAILURES: 1
+  - multi_people: tennis court without verified play

@@ -1,0 +1,110 @@
+{
+  "competition_mode": true,
+  "critical": 0,
+  "high": 0,
+  "medium": 0,
+  "low": 0,
+  "rows": [
+    {
+      "name": "soccer",
+      "severity": "PASS",
+      "fails": [],
+      "people": 4,
+      "graph_person": 4,
+      "activities": [
+        {
+          "activity": "playing football",
+          "n_person_actors": 2
+        }
+      ],
+      "caption": "Two people are playing football while a white ball lies nearby."
+    },
+    {
+      "name": "farm",
+      "severity": "PASS",
+      "fails": [],
+      "people": 1,
+      "graph_person": 1,
+      "activities": [
+        {
+          "activity": "leading a horse",
+          "n_person_actors": 1
+        },
+        {
+          "activity": "holding a rope",
+          "n_person_actors": 1
+        }
+      ],
+      "caption": "A person wearing light clothing holds a rope while leading a brown horse outdoors. A fire is burning in the foreground. Farther back, another horse is in the field."
+    },
+    {
+      "name": "motorcycle",
+      "severity": "PASS",
+      "fails": [],
+      "people": 1,
+      "graph_person": 1,
+      "activities": [
+        {
+          "activity": "riding a motorcycle",
+          "n_person_actors": 1
+        }
+      ],
+      "caption": "A man is riding a dirt bike. Large rocks and grass on the ground next to the water. A brown motorcycle is visible behind them. He is wearing a red jacket and orange pants. He has a helmet on his head and goggles on his eyes. The bike has a number on the front of it."
+    },
+    {
+      "name": "bicycle",
+      "severity": "PASS",
+      "fails": [],
+      "people": 2,
+      "graph_person": 2,
+      "activities": [
+        {
+          "activity": "carrying a handbag",
+          "n_person_actors": 1
+        }
+      ],
+      "caption": "One person is carrying a handbag. Another person can also be seen nearby. A bicycle is visible behind them."
+    },
+    {
+      "name": "baseball",
+      "severity": "PASS",
+      "fails": [],
+      "people": 2,
+      "graph_person": 2,
+      "activities": [],
+      "caption": "A young person is swinging a baseball bat at a white ball."
+    },
+    {
+      "name": "kitchen",
+      "severity": "PASS",
+      "fails": [],
+      "people": 2,
+      "graph_person": 2,
+      "activities": [],
+      "caption": "Two people are in a kitchen around a dining table. A white refrigerator, a brown couch, an oven, a sink, and a tv are visible behind them. A beige cup and a brown vase sit on the table, while 4 brown chairs surround it."
+    },
+    {
+      "name": "dense",
+      "severity": "PASS",
+      "fails": [],
+      "people": 12,
+      "graph_person": 12,
+      "activities": [
+        {
+          "activity": "playing with a tennis racket",
+          "n_person_actors": 1
+        }
+      ],
+      "caption": "Outdoors, a person is playing with a tennis racket, while several other people remain farther back."
+    },
+    {
+      "name": "animal",
+      "severity": "PASS",
+      "fails": [],
+      "people": 0,
+      "graph_person": 0,
+      "activities": [],
+      "caption": "A bear is at the heart of the scene."
+    }
+  ]
+}

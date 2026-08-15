@@ -1,0 +1,23 @@
+[yolo]
+variant = "yolov8n"
+weights_path = ""
+confidence_threshold = 0.35
+iou_threshold = 0.45
+preferred_device = "cuda"
+
+[blip]
+model_id = "Salesforce/blip-image-captioning-base"
+preferred_device = "cuda"
+max_length = 64
+
+[gemma]
+model_id = "google/gemma-2-2b-it"
+preferred_device = "cuda"
+quantization = "int4"
+max_new_tokens = 128
+temperature = 0.7
+
+[plugins]
+detection = "vision.yolo_v8n"
+vision_language = "language.blip_base"
+reasoning = "language.gemma_2b"

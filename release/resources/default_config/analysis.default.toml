@@ -1,0 +1,30 @@
+# Analysis heuristics — thresholds for attribute, relation, activity, and context stages.
+
+[analysis.attributes]
+size_small_max_ratio = 0.02
+size_medium_max_ratio = 0.08
+zone_split_low = 0.33
+zone_split_high = 0.66
+distance_near_ratio = 0.12
+distance_medium_ratio = 0.04
+pose_standing_ratio = 1.25
+pose_lying_ratio = 0.75
+visibility_high_threshold = 0.75
+visibility_medium_threshold = 0.45
+
+[analysis.relationships]
+overlap_distance = 1.0
+overlap_confidence = 0.9
+distance_confidence_factor = 50.0
+max_confidence = 0.95
+near_distance_ratio = 0.18
+far_distance_ratio = 0.45
+
+[analysis.activity]
+confidence_with_nodes = 0.75
+confidence_empty = 0.4
+
+[analysis.context]
+crowd_threshold = 3
+complexity_high_relations = 12
+complexity_medium_relations = 5
